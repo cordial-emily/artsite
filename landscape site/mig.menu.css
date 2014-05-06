@@ -1,0 +1,222 @@
+/*
+ * THEME MENU
+ **/
+#theme_menu {
+  margin: 91px 0px 0px 0px;
+  padding: 0px;
+  float: right;
+  width: 550px;
+  overflow: hidden;
+  list-style: none;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+}
+#theme_menu li {
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  border-left: 1px #448888 solid;
+  padding: 0.0em 0.8em 0.0em 0.8em;
+}
+#theme_menu li:first-child {
+  border-left: none;
+}
+#theme_menu a {
+  overflow: hidden;
+}
+#theme_menu a:hover, #theme_menu a:active {
+  text-decoration: none;
+}
+
+
+
+
+#theme_menu_planning {
+}
+#theme_menu_planning a {
+  height: 34px;
+}
+#theme_menu_planning a:hover {
+}
+#theme_planning #theme_menu_planning a {
+  background-position: 0px -34px;
+}
+
+#theme_menu_design {
+}
+#theme_menu_design a {
+  height: 34px;
+}
+#theme_menu_design a:hover {
+}
+#theme_design #theme_menu_design a {
+  background-position: 0px -34px;
+}
+
+#theme_menu_communications {
+}
+#theme_menu_communications a {
+  height: 34px;
+}
+#theme_menu_communications a:hover {
+}
+#theme_communications #theme_menu_communications a {
+  background-position: 0px -34px;
+}
+
+#theme_menu_management {
+}
+#theme_menu_management a {
+  height: 34px;
+}
+#theme_menu_management a:hover {
+}
+#theme_management #theme_menu_management a {
+  background-position: 0px -34px;
+}
+
+#theme_menu_technology {
+}
+#theme_menu_technology a {
+  height: 34px;
+}
+#theme_menu_technology a:hover {
+}
+#theme_technology #theme_menu_technology a {
+  background-position: 0px -34px;
+}
+
+
+/*
+ * SERVICE MENU
+ **/
+.menu_bottom_border {
+  margin:0px;
+  border-bottom: 1px #CCC solid;
+}
+#service_menu, #extra_menu, #featured_menu {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1.0em;
+}
+#featured_menu {
+  margin-top: 0em;
+  margin-bottom: 1em;
+  margin-left: 1.0em;
+}
+#service_menu li, #extra_menu li, #featured_menu li {
+  /*list-style: none;*/
+  font-size: 90%;
+  padding: .5em .0em;
+}
+#service_menu li a, #extra_menu li a, #featured_menu li a {
+  display: block;
+  padding-left: 0em;
+  text-decoration: none;
+}
+
+#featured_menu li a {
+  font-weight: bold;
+}
+
+#service_menu li a, #extra_menu li a, #featured_menu li a {
+  border-bottom: 1px #363636 solid;
+}
+#service_menu li a:hover, #extra_menu li a:hover, #featured_menu li a:hover {
+  border-bottom: 1px #fff dashed;
+  text-decoration: none;
+}
+
+.service_menu_debug a {
+  color: #000;
+}
+.service_menu_off {
+  list-style: none;
+}
+.service_menu_off a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #fff;
+}
+.service_menu_highlighted, .service_menu_selected {
+  list-style: none;
+  color: #fff;
+}
+.service_menu_highlighted a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.service_menu_selected a {
+  font-weight: bold;
+  color: #fff;
+}
+
+.planning_services_highlighted a,
+#theme_planning .service_menu_selected a {
+  border-bottom: 1px #409590 dashed;
+  font-weight: bold;
+  color: #409590;
+}
+.planning_services_highlighted ,
+#theme_planning .service_menu_selected  {
+  font-weight: bold;
+  list-style: square;
+  color: #409590;
+}
+.design_services_highlighted a,
+#theme_design .service_menu_selected a {
+  border-bottom: 1px #5b3d19 dashed;
+  font-weight: bold;
+  color: #83A542;
+}
+.design_services_highlighted ,
+#theme_design .service_menu_selected  {
+  font-weight: bold;
+  list-style: square;
+  color: #83A542;
+}
+.communications_services_highlighted a,
+#theme_communications .service_menu_selected a {
+  border-bottom: 1px #c9900f dashed;
+  font-weight: bold;
+  color: #c9900f;
+}
+.communications_services_highlighted ,
+#theme_communications .service_menu_selected {
+  font-weight: bold;
+  list-style: square;
+  color: #c9900f;
+}
+.management_services_highlighted a,
+#theme_management .service_menu_selected a {
+  border-bottom: 1px #a54930 dashed;
+  font-weight: bold;
+  color: #cc6731;
+}
+.management_services_highlighted,
+#theme_management .service_menu_selected {
+  font-weight: bold;
+  list-style: square;
+  color: #cc6731;
+}
+.technology_services_highlighted a,
+#theme_technology .service_menu_selected a {
+  border-bottom: 1px #363b73 dashed;
+  font-weight: bold;
+  color: #adadeb;
+}
+.technology_services_highlighted,
+#theme_technology .service_menu_selected {
+  font-weight: bold;
+  list-style: square;
+  color: #adadeb;
+}
+
+#service_menu li.selected a {
+}
+
+#service_menu li.highlighted a {
+}
+

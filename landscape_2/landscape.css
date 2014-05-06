@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a:link   {
+  /* Applies to links under the pointer */
+    text-decoration:  none;
+    color: #fff;
+}
+a:hover {
+    color: rgb(0, 61, 76);
+    text-decoration: none;
+} 
+#container {
+    width: 1000px;	
+	font-family: "MS Serif", "New York", serif;
+	font-size: small;
+	padding-right: 70px;
+	padding-left: 70px;
+}
+#main_header {
+	width: 1000px;    
+	display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    background: url("CalWild_header.jpg") no-repeat;
+	color: #FFF;
+}
+#main_header h2 a {
+	color: #FFF;
+}
+#navlist li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+	text-decoration: none;
+	min-height: 650px;
+	font-family: "trebuchet","frutiger linotype","lucida grande","verdana";
+	font-size: 13px;
+	font-weight: 400;
+}	
+#top_menu ul {
+	width: 773px;
+	height: 15px;
+	margin: 0;
+	float: left;
+	list-style: none outside none;
+	text-align: right;
+	float: right;
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-bottom: 8px;
+	padding-left: 2px;
+	color: #FFFFFF;
+	background-color:#b4b383;
+	font-family: "georgia",sarif;
+	border-bottom: solid white 4px;
+}
+#navigation-block {
+    float: left;
+    width: 219px;
+    border-right: 6px solid rgb(255, 255, 255);
+    background: none repeat scroll 0% 0% rgb(166, 142, 82);
+    min-height: 650px;
+	font-family: "georgia",sarif;
+	font-size: 16.9px;
+	font-weight: 700;
+	text-transform: lowercase;
+	background-color: #646432;
+	line-height: 30px
+}
+#box_menu {
+	height:200px;
+	width: 200px;
+}
+#service_top_left {
+	float: left;
+	margin-top: 4px;
+}
+#service_intro {
+	float:left
+}
+#service_top_right {
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+	padding-top: 0px;
+    padding-left: 4px;
+    width: 497px;
+	height: 270px;
+	float: left;
+}
+#service_header_container img { 
+	float: left;
+	padding-right: 6px;
+}
+#title_background_text {
+	text-align:center;
+	font-family: "georgia",sarif;
+	font-size: 16.9px;
+	font-weight: 700;
+	text-transform: lowercase;
+	width: 501px;
+	background-image:url(planning_d_text.jpg);
+	background-color: #646432;
+	height: 62px;
+	padding-top: 6px;
+}
+#background_text {
+	font-family: "trebuchet","frutiger linotype","lucida grande","verdana";
+	font-size:12px;
+	margin-top: 4px;
+	line-height: 20px
+}
+#featured_projects {
+	float:left;
+	width: 770px;
+	height: 380px;
+	padding-top: 4px;
+}
+#featured_projects_title {
+	text-align:center;
+	font-family: "georgia",sarif;
+	font-size: 16.9px;
+	font-weight: 700;
+	text-transform: lowercase;
+	width: 779px;
+	background-color: #646432;
+	height: 27px;
+	padding-top: 6px;
+}
+#featured_projects_fill {
+	float:left;
+}
+#featured_projects_text {
+	font-family: "trebuchet","frutiger linotype","lucida grande","verdana";
+	font-size:12px;
+	margin-top: 4px;
+	float:left;	
+}
+
+#footer {
+  	width: 1000px;
+  	clear: both;
+  	background: #a4a36a;
+  	color: #fff;
+  	padding: 0px;
+  	margin: 0px;
+  	border-top: 5px #fff solid;
+	
+}
+#footer p {
+  	padding: 1.25em 1em 1.25em 2em;
+  	margin: 0px;
+  	font-size: 80%;
+	font-family: "trebuchet","frutiger linotype","lucida grande","verdana";
+	text-align: right;
+}

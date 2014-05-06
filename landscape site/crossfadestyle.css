@@ -1,0 +1,58 @@
+
+
+#content {
+
+}
+
+ul.crossfade {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+#fade-example-3 {
+	border: none;
+}
+#fade-example-1 li,#fade-example-2 li {
+	position: absolute;
+	top: 0;
+	left: 0;
+		margin:0;
+	padding:0;
+	width: 775px;
+	height: 310px;
+	background-color: #fff;
+	visibility: hidden;
+}
+
+li img {
+	display: block;
+	border: none;
+}
+.caption {
+	clear: both;
+	padding: 1em;
+	background-color: #FFF;
+}
+.example {
+	position: relative;
+	background-color:#fff;
+	border:none;
+	width: 775px;
+	height: 310px;
+	margin:0;
+	padding:0;
+}
+
+
+code {
+	font-family: monospace;
+	font-size: 1.2em;
+}
+
+
+.ajax {
+	margin: 3em;
+	border: 1em solid #FF8C00;
+	padding: 1em;
+}

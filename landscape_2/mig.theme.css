@@ -1,0 +1,138 @@
+.theme {
+
+}
+
+h2#theme_title_planning, h2#theme_title_design, h2#theme_title_communications, h2#theme_title_management, h2#theme_title_technology {
+  height: 22px;
+  width: 216px;
+  margin: 0px;
+  padding: 8px 0px 9px 0px;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Georgia","Times", serif; 
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+h2#theme_title_planning {
+  background-color: #4E948D;
+}
+
+h2#theme_title_design {
+  background-color: #83A542;
+}
+
+h2#theme_title_communications {
+  background-color: #BF8F1E;
+}
+
+h2#theme_title_management {
+  background-color: #9B4736;
+}
+
+h2#theme_title_technology {
+  background-color: #3C3972;
+}
+
+
+.theme_wrapper {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /*border-bottom: 2px solid #ccc;*/
+  overflow: hidden;
+  width: 775px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.theme_left {
+  float: left;
+  width: 216px;
+  margin: 0px 6px 0px 0px;
+  padding: 0px;
+  background: #F4F1EC;
+}
+
+.theme_image {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 2px solid #ccc;
+}
+.theme_caption {
+  text-align: right;
+  margin: 0px;
+  padding: 5px 10px 5px 10px;
+  color: #666;
+  font-style: italic;
+  font-size: 80%;
+}
+.theme_right {
+  float: right;
+  width: 553px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.theme_quote {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  font-family: "Georgia","Times", serif; 
+  padding: 2em 2em 2em 2em;
+  border-bottom: 2px solid #ccc;
+  /*background: #c74a1a;*/
+  color: #333;
+}
+.theme_quote em {
+  display: block;
+  font-size: 90%;
+  font-style: italic;
+  text-align: right;
+}
+#theme_planning .theme_quote {
+  background: #c9ddde;
+}
+#theme_design .theme_quote {
+  background: #c9b9aa;
+}
+#theme_communications .theme_quote {
+  background: #e3c080;
+}
+#theme_management .theme_quote {
+  background: #d7a894;
+}
+#theme_technology .theme_quote {
+  background: #b8b8d2;
+}
+.theme_quote p {
+  line-height: 1.2em;
+  display: block;
+  padding-bottom: 1em;
+}
+
+.theme_text {
+  padding: 2em 2em 2em 2em;
+
+}
+.theme_text p {
+  font-size: 90%;
+  line-height: 2.0em;
+}
+.theme_links {
+  padding: 1em 2em 2em 2em;
+  border-top: 2px solid #ccc;
+}
+.theme_links h3 {
+  margin-bottom: 1.0em;
+  font-weight: bold;
+  color: #333;
+}
+.theme_links ul {
+  margin: 0em;
+  padding: 0em;
+}

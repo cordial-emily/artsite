@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+
+<title>cynical pills</title>
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#slider').cycle({
+		fx: 'scrollHorz', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		timeout: 0,
+		next:   '#next', //for toggling through slides
+        prev:   '#previous',
+	
+		after: function() {
+     		$('#caption').html(this.alt); 
+			}
+	});
+	
+});
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="mm_entertainment.css" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+	text-color: #666666;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+}
+
+#page {
+	background-color: #FFFFFF;
+	width: 1200px;
+	margin: 15px;
+}
+
+#top_container {
+	overflow: auto;
+	margin: 100px;
+	height: 650px;
+}
+#caption {
+	padding-right: 200px;
+	padding-left: 160px;
+}
+
+#slider {
+	height: 600px;
+	width: 600px;
+	float: left;
+	overflow: hidden;
+}
+.controller {
+
+}
+
+#previous {
+	background-image: url(arrow_previous.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 150px;
+	height: 600px;
+	float: left;
+}
+
+#next {
+	background-image: url(arrow_next.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 150px;
+	height: 600px;
+	float: left;
+}
+
+
+
+-->
+</style>
+</head>
+<body>
+<div id="page">
+  <div id="top_container">
+  	<p id="caption"></p>
+    <div class="controller">
+    	<div id="previous"></div>
+    </div>
+    <div id="slider">
+    		
+        <img src="cynicalpills.jpg" height="600" alt="'not intended for pregnant women', or 'cynical pills'. Digitally altered photo, 2007. Emily Schleiner" />
+        <img src="pinatajennyNetArt.jpg" width="600" alt="'Gifting Self Destruction in Washington Square Park'.  Poster, New York, 2007. Emily Schleiner"/>
+        <img src="weaselcombo20.jpg" width="600" alt="'Sinister Animals'. Poster, New York 2008. Emily Schleiner"/>
+        <img src="sunsalutation.jpg" width="600" alt="'Sun Salutation on Halsey St'. Poster, New York 2006. Emily Schleiner "/>
+        <img src="strength.jpg" height="600" alt="'Strength'. Flyer, New York, 2006. Emily Schleiner"/>
+        <img src="eating_my_body.jpg" width="600" alt="'Eating my body'. Video Still, Seattle, 2003. Emily Schleiner"/>
+        <img src="cake1.jpg" height="600" alt="'The Sharing of Cake and Questions'. Newletter, Seattle, 2002. Emily Schleiner"/>
+        <img src="corpo2.jpg" height="600" alt="'ration unity', some wordplay on a business jacket. Multimedia on canvas. 2007, Emily Schleiner" />
+        
+    </div>
+    <div class="controller">
+   	  <div id="next"></div> 
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>

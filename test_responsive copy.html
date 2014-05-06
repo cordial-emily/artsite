@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset=utf-8 />
+<title>woot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+        <!-- Using picturefill to load conditional images and matchmedia to provide support for IE8 and below + older browsers -->
+		<script src="js/picturefill.js"></script>
+		<script src="js/matchmedia.js"></script>
+        
+		<!-- Viewport meta tag to prevent iPhone from scaling our page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		
+		<!-- Normalize hide address bar for iOS and Android -->
+		<script src="./js/hideaddressbar.js"></script>
+		
+		<!-- Add media query support for IE8 and under. Must place media queries in external stylesheet -->
+		<script src="./js/respond.min.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+<style type="text/css">
+ /********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ body {
+   background-color: #ffffff;
+   min-height: 100%;
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+   font-size: 30px;
+ }
+ 
+ .heading {
+  width: 100%;
+  height: 132px;
+  font-family: 'Josefin Sans', 'sans-serif';   
+  background: rgb(244, 245, 240);
+  background: -moz-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+  background: -webkit-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+  background: -o-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+  background: -ms-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+  background: linear-gradient(179deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+  border:2px solid;
+  display: block;
+  float:left;
+  overflow: hidden;
+  box-sizing:border-box;
+  
+ }
+ 
+ .subheading_pic {
+	 max-width: 33%;
+	 float:left;
+	 height: 132px;
+	 display: block;
+	 box-sizing:border-box;
+	 
+ }
+ .subheading_text {
+	 float:left;
+	 height:130px;
+	 padding: 0px;
+	 display: block;
+	 width:66%;
+	 box-sizing:border-box;
+	 /*letter-spacing: 0.4em;*/	 
+ }
+ .subheading_floating_text_1 {
+	 /*<!--rounded corners-->*/
+	 /*-webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     border-radius: 25px;*/
+	 /*<!--shadow-->*/
+	/* -webkit-box-shadow: -2px 1px 18px 0px rgba(69, 50, 50, 0.48);
+     -moz-box-shadow:    -2px 1px 18px 0px rgba(69, 50, 50, 0.48);
+     box-shadow:         -2px 1px 18px 0px rgba(69, 50, 50, 0.48);*/
+	 padding-left: 10px;
+	 padding-right: auto;
+	 vertical-align: middle;
+	 padding-top: 15px;
+	 margin: auto;
+	 padding-bottom: 15px;
+	 float:left;
+	 display: block;
+	 text-align: center;
+     vertical-align: middle;
+	 
+ }
+ .textandpics {
+	width:50%;
+	float:left;
+	background-color: #f7efde; 
+	min-height:300p;
+ }
+ .sidecolumn {
+	width:50%;
+	float:left;
+	background-color: #bdd7ca; 
+	min-height:300px;	 
+ }
+  
+.botton {
+/*<!--rounded corners-->*/
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px;
+
+/*color: #bdd7ca;*/
+background: rgb(244, 245, 240);
+background: -moz-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+background: -webkit-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+background: -o-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+background: -ms-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+background: linear-gradient(179deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+-webkit-box-shadow: -2px 1px 18px 0px rgba(69, 50, 50, 0.48);
+-moz-box-shadow:    -2px 1px 18px 0px rgba(69, 50, 50, 0.48);
+box-shadow:         -2px 1px 18px 0px rgba(69, 50, 50, 0.48);
+border: 0px;
+border-color: #def0e7;
+border-style: solid;
+padding: 0px;
+display: block;
+font-family: 'Josefin Sans', 'sans-serif';
+min-height: 30px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 15px;
+margin-bottom: 0px;
+font-size: 100px;
+float: left;
+
+}
+
+p {
+margin-bottom: 0px;
+margin-top: 0px;
+display: block;
+}
+
+h1 {
+font-family: 'Josefin Sans', 'sans-serif';
+font-size:100%;
+margin: 0px;
+display: block;
+padding: 0px;
+color: #666666;
+letter-spacing: 0.1em;
+
+}
+h2 {
+font-family: 'Josefin Sans', 'sans-serif';
+font-size:25%;
+margin: 0px;
+display: block;
+padding: 0px;
+letter-spacing: 0.05em;
+float: right;
+
+}
+
+.navigate_full_box {
+	width: 100%;
+	height: 350px;
+	box-sizing:border-box;
+	float:left;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+	
+#navigate {
+font-size: 20px;
+color: #666666;
+letter-spacing: 0.4em;	
+text-align: center;
+vertical-align: middle;
+margin: 10px;
+padding: 5px;
+}
+
+#navigate ul {
+	list-style-type: none;
+	list-style-position: outside;
+	display: inline;
+}
+#navigate ul li {
+	display: inline;
+	padding: 0 5px 0 5px;
+	border-right: 1px dotted #736562;
+	float: left;
+ 
+list-style: none;
+}
+#navigate ul li a {
+	text-decoration: none ;
+	color: #736562 ;
+}
+#navigation ul li a:hover {
+	color: white;
+	background-color: #999966;
+}
+img{
+    
+    height:auto-inherit;
+    display:block;
+}
+
+
+/* Form / Basic Layout */
+
+form {
+    padding: 0 0 1.3em;
+    }
+    
+form ul {
+    list-style: none;
+    padding: 1.3em 0 0;
+    }
+    
+form li {
+    padding: 0 0 .65em;
+    }
+	
+legend {
+	font-size: 1.382em; 
+	line-height: 1.223;
+	}
+		    
+label {
+    display: block;
+	font-size: 1em;
+	line-height: 1.56;
+    padding: 0 0 .325em;
+	}
+		
+legend, label {      
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #fff;
+	}
+	
+input,
+textarea {
+    display: block;
+    width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.3;
+	font-weight: 500;
+    padding: .65em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+/* Form Breakpoint 1 / Layout Update */
+	
+@media (min-width: 45em) {
+
+.name, .email {
+    float: left;
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    
+.name {
+    padding-right: .65em;
+    }
+    
+.email {
+    padding-left: .65em;
+    }
+    
+.send {
+    width: 48.6%;
+    }
+    
+}
+
+/* Form Breakpoint 2 / Layout Update */
+
+@media (min-width: 60em) {
+
+.name, .email {
+    padding-right: 1.3em;
+    padding-left: 0;
+    clear: both;
+    }
+    
+.message textarea {
+    width: 50%;
+    }
+    
+.send {
+    width: 25%;
+    margin-left: 50%;
+    }
+    
+}
+
+#container-footer {
+	padding: 32px 0;
+	background:#bdd7ca;
+	color:#eee;
+	font-weight:100;
+}
+.wrapper {
+	        padding: 0 .65em;
+	        -webkit-box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+		}
+		
+	/********************************************
+	Fluid Media
+	********************************************/
+
+	figure {
+	    position: relative;
+	}
+
+	figure img,
+	figure object,
+	figure embed,
+	figure video {
+	    display: block;
+	    max-width: 100%; 
+	}
+
+	img {
+	    border: 0;
+	    -ms-interpolation-mode: bicubic;
+	}
+
+	/* 
+	interpolation-mode
+	http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
+	 */
+	
+	
+/* Creates hover effect on Portfolio images */
+	#portfolio figure:hover,
+	.box:hover {
+	    -moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	    -webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	    box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	}
+
+	/* Image Offset for Indication of Linked Content */
+
+	#portfolio figure:hover {
+	    bottom: .26em;
+	}
+
+@media screen and (min-width: 45em) {
+  #container-header {
+	  background: #352a38 url("garden_animation_big.jpg") no-repeat top center;
+	  padding: 10% 0;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  background-size: cover;
+  }
+}		
+
+@media screen and (max-width: 45em) {
+	#container-header {
+		background: #352a38 url("garden_animation_small.jpg") no-repeat top center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		padding: 10% 0;
+	}
+}	
+/* Headshot */
+
+#emily {
+    width: 25%;
+    padding-bottom: 25%;
+	float:left;
+    }
+    
+#emily img {
+    width: 100%;
+    }	
+			
+
+</style>
+</head>
+  
+<body>
+	<header style="padding=0%"><div class="heading">
+
+      <div class="subheading_pic">
+          <img src="senseMem_logo.1.png" alt="website of emily schleiner" max-width="130" max-height="132" style="float:left" />
+          </div>
+      <div class="subheading_text">
+          <div class="subheading_floating_text_1">
+          <h1>emily schleiner</h1>
+      </div> <!-- end subheading_floating_text_1-->
+      
+      <h2><ul style="list-style-type: none;">
+        <li>artist</li>
+        <li>designer</li>
+        <li>independant researcher</li>
+      </ul></h2>
+      </div>
+	</div><!--heading-->
+   </header>
+   
+ <div class="navigate_full_box portforlio" id="container-header">
+  <nav class="nav">
+  </nav>
+  
+  		<figure id="emily"> 
+        <div data-picture data-alt="Emily Schleiner"> 
+        <div data-src="profile_pic_.1.jpg"></div>
+        <div data-src="profile_pic_.1.jpg" data-media="(min-width: 45em)"></div>
+        <div data-src="profile_pic_.1.jpg" data-media="(min-width: 60em)"></div>
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+     <!--   <noscript>-->
+            <img src="profile_pic_.1.jpg" alt="Emily Schleiner">
+        <!-- </noscript>-->
+        </figure>
+  </div> <!--close navigate_full_box-->
+
+<div class="textandpics">
+  <p>lots of description, words words words</p>
+</div> <!--textandpics-->
+
+<div class="sidecolumn">
+  <div class="botton" id="navigate">
+    <p align=center style="padding:10px">sometimes</p>
+  </div>
+  <div class="botton">
+    <p align=center>beep beep</p>
+  </div>
+  <div class="botton" id="navigate">
+    <ul>
+    <li><a href="Emily_home.html">home</a></li> 
+    <li>video</li> 
+    <li>still</li>
+    <li>c.v.</li>
+    <li>blog</li>
+    <li>upcoming events</li>
+    </ul>
+  </div>
+</div> <!--end sidecolumn-->
+
+		<div id="container-footer">   
+          <form>
+            <fieldset class="wrapper">
+                <legend>Contact</legend>
+                    <ul class="group">
+                        <li class="name">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" />
+                        </li>
+                        <li class="email">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" />
+                        </li>
+                        <li class="message">
+                            <label for="message">Say Hello</label>
+                            <textarea id="message" name="message"></textarea>
+                        </li>
+                    </ul>
+                <input class="send" type="submit" name="submit" value="Send" />
+            </fieldset>
+        </form>        
+			<footer id="colophon" class="wrapper">
+				<p>©2013 all rights reserved. Fill out a form here to get in touch.</p>
+			</footer>
+		</div>	
+
+
+  
+</body>
+</html>

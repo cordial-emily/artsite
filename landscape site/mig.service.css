@@ -1,0 +1,207 @@
+.service {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+  /*New h1 styles for when we switch themes and services to h1
+.service h1 {
+  width: 100%;
+  background: #4F4869;
+  text-transform: lowercase;
+  color: #fff;
+  font-weight: bold;
+  padding: .5em 0em .5em 0em;
+  margin: 0px 0px 15px 6px;
+}
+
+.service h2 {
+  text-transform: capitalize;
+  color: #c74a1a;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+*/
+
+
+.service h2 {
+  width: 100%;
+  background: #646432;
+  text-transform: lowercase;
+  color: #fff;
+  font-weight: bold;
+  padding: .5em 0em .5em 0em;
+  margin: 0px 0px 15px 6px;
+}
+
+.service h3 {
+  text-transform: capitalize;
+  color: #c74a1a;
+  font-weight: bold;
+  font-size: 90%;
+}
+.service p {
+  font-size: 90%;
+  color: #333;
+}
+
+#featured_projects_title {
+  clear: both;
+  padding: .25em 20px .25em 20px;
+  margin-top: 6px;
+  background: #646432;
+  color: #fff;
+  text-transform: lowercase;
+}
+#service_top_left {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0px 0px 6px 0px;
+  padding: 0px;
+  width: 270px;
+}
+#service_top_right {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  width: 460px;
+}
+
+#service_top_right, #service_top_left {
+  height: 270px;
+  float: left;
+}
+#service_top_right p, #service_top_right h2 {
+  line-height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#service_bottom {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 32em;
+  margin: 0px 10px;
+  overflow: hidden;
+}
+
+#service_bottom a {
+  text-decoration: none;
+}
+#service_bottom a:hover {
+  text-decoration: underline;
+}
+
+#service_bottom .spacer {
+  display: block;
+  width: 400px;
+  height: 20em;
+}
+
+#service_bottom h4, .service_header {
+  color: #c74a1a;
+  font-weight: bold;
+  font-size: 90%;
+  text-transform: capitalize;
+  border-bottom: 1px dashed #CCC;
+  padding: 3px 0px 3px 16px;
+  margin: 0.5em 0em 0.5em 0em;
+  cursor: pointer;
+  clear: both;
+  background: url('/img/bullets/orange_plus.jpg') no-repeat 0% 50%;
+  overflow: hidden;
+}
+#service_bottom h4 a {
+  color: #c74a1a;
+}
+#service_accordian {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.mp_panel {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.mp_content {
+
+}
+
+.front_page_project {
+  width: 370px;
+  overflow: hidden;
+
+
+  float: left;
+}
+.front_page_project_image {
+  width: 110px;
+  margin: 0px 0.5em 6px 0px;
+  padding-top: 0px;
+  float: left;
+}
+.front_page_project_text p {
+  margin-top: .5em;
+  margin-left: .5em;
+}
+.front_page_project_text {
+  width: 248px;
+  font-size: 90%;
+  overflow: hidden;
+}
+.front_page_project h5, .front_page_project strong {
+  color: #67999A;
+  font-family: "georgia", Serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: .25em;
+}
+.front_page_project h5 a, .front_page_project strong a {
+  color: #67999A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.service_project {
+  width: 337px;
+  height: 110px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  float: left;
+}
+.service_project_image {
+  width: 100px;
+  padding-top: 5px;
+  text-align: center;
+  float: left;
+}
+.service_project_text {
+  width: 225px;
+  font-size: 90%;
+  float: right;
+  overflow: hidden;
+}
+.service_project h5, .service_project strong {
+  color: #333;
+  font-weight: bold;
+  /*text-transform: uppercase;*/
+}
+.service_project h5 a, .service_project strong a {
+  color: #333;
+}
+
+#service_item_17 {
+  display: none;
+}

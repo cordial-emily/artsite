@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>emily schleiner's website</title>
+<!-- TemplateEndEditable -->
+<link href="layout.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" -->
+<style type="text/css">
+<!--
+.style1 {font-family: Arial, Helvetica, sans-serif}
+-->
+#firstwrap #wrapper #bodyArea #left #contentText {
+	border: 0px none #FFFFFF;
+	background-color: #FFFFFF;
+	width: 100px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 10px;
+	height: 290px;
+	margin-right: 100px;
+	float: right;
+	font-variant: normal;
+	color: #999999;
+	margin-top: 30px;
+}
+#firstwrap #wrapper #bodyArea #left #contentVideo {
+	background-color: #FFFFFF;
+	width: 390px;
+	border: 0px none #FFFFFF;
+	height: 340px;
+	float: right;
+	padding-top: 0px;
+	position: static;
+	background-position: center top;
+	clear: left;
+	margin-top: 30px;
+	margin-right: 70px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+}
+
+</style>
+<!-- TemplateEndEditable -->
+</head>
+
+<body bgcolor="#FFFFFF">	
+
+<div id="firstwrap"> 
+            
+            <div id="wrapper">
+                
+                <div id="logo">
+                <div align="center"><img src="../heading_perspective.jpg" alt="website of emily schleiner" width="770" height="162" /></div>
+              </div>
+                
+                <div id="navigation">
+                	<div align="center">
+                		<ul>
+                        	<li><a href="../Emily_home.html">home</a></li> 
+                            <li><a href="../performance_video.html">performance &amp; video</a></li>
+                            <li><a href="../still_work.html">still work</a></li>
+                            <li><a href="../c.v.html">c.v.</a></li> 
+                            <li><a href="http://knownhabits.wordpress.com/">blog</a></li>
+                            <li><a href="../upcoming_events.html">upcoming events</a></li>
+                       </ul>
+                   </div>
+                </div>
+                
+                <div id="headerImg">
+                <div align="center"></div>
+              </div>
+          
+                <div id="bodyArea"><!-- TemplateBeginEditable name="EditRegion1" -->
+                <div id="left">
+                  <div id="contentText">
+                    <p class="style1">Welcome to the online home of</p>
+                    <p class="style1">Emily Schleiner, a Brooklyn, NY and Davis, CA-based new media artist and thinker who works collaboratively on visual art, video, and experimental performance projects,   tilting perspectives on  science, religion, politics, and technology. </p>
+                  </div>
+           		  <div id="contentVideo">
+                      	<p>&nbsp;</p>
+                   	<img src="../AnimatedWelcome_Screen.gif" width="382" height="278" />                      	</div>
+                  </div>
+                <!-- TemplateEndEditable --></div>
+                
+  </div>
+</div>     
+      
+        <div align="center"></div>
+        
+</body>
+</html>

@@ -1,0 +1,266 @@
+.admin {
+
+}
+.admin h2 {
+  background: url("/img/admin/admin_title.jpg") no-repeat;
+  height: 80px;
+  margin: 0px;
+  padding: 0em 0em 0em 2em;
+  overflow: hidden;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 180%;
+  line-height: 4em;
+  letter-spacing: .25em;
+}
+
+
+/*
+ * Editor Actions/Menu 
+ **/
+
+#editor_actions {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+  font-size: 90%;
+  text-transform: lowercase;
+  padding: .5em;
+}
+
+#editor_actions ul {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  width: 11em;
+}
+
+#editor_actions li, #editor_actions a {
+  margin: 0px;
+  width: 9em;
+}
+#editor_actions li {
+  position: relative;
+  padding: 0em;
+  list-style: none;
+}
+#editor_actions a {
+  display: block;
+  padding: 0.2em 0.5em 0.2em 20px;
+  color: #333;
+  text-decoration: none;
+}
+#editor_actions ul li a:hover {
+  color: #33f;
+  text-decoration: underline;
+}
+
+
+
+
+
+.item_actions ul {
+  float: right;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: .5em;
+  font-size: 90%;
+  text-transform: lowercase;
+  list-style: none;
+}
+.item_actions li, .item_actions a {
+  margin: 0px;
+}
+.item_actions li {
+  display: inline;
+  padding: 0em;
+  list-style: none;
+}
+.item_actions a {
+  padding: 0.2em 0.5em 0.2em 20px;
+  color: #333;
+  text-decoration: none;
+}
+.item_actions ul li a:hover {
+  color: #33f;
+  text-decoration: underline;
+}
+
+/* Suckerfish dropdowns for Editor Menu */
+#editor_menu {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2.5em;
+  font-size: 90%;
+  text-transform: lowercase;
+  z-index: 100;
+  background: #CCC;
+  border-top: 1px #333 solid;
+  border-bottom: 1px #333 solid;
+}
+
+#editor_menu ul {
+  position: relative;
+  overflow: visible;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0em 0.5em;
+  list-style: none;
+  z-index: 200;
+}
+
+#editor_menu li, #editor_menu a {
+  margin: 0px;
+  width: 9em;
+}
+#editor_menu li {
+  position: relative;
+  padding: 0em;
+  float: left;
+  z-index: 200;
+}
+
+#editor_menu a {
+  display: block;
+  padding: 0.5em 0.5em 0.5em 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+#editor_menu li li a {
+  padding: 0.3em 0.5em 0.3em 20px;
+}
+
+#editor_menu a:hover {
+  color: #ffc;
+}
+
+#editor_menu li ul {
+  position: absolute;
+  width: 10em;
+  top: 2.0em;
+  left: -999em;
+  background: #DDD;
+  margin-left: 1em;
+  border: 1px solid #999;
+}
+#editor_menu li ul ul {
+  margin: 0em 0em 0em 10em;
+}
+
+#editor_menu li:hover ul ul,  #editor_menu li.sfhover ul ul {
+  top: 0em;
+  left: -999em;
+}
+
+#editor_menu li:hover ul, #editor_menu li.sfhover ul, #editor_menu li li:hover ul, #editor_menu li li.sfhover ul {
+  left: auto;
+}
+
+li#em_toggle {
+  background: url('/img/icons/cog.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_project_pages {
+  background: url('/img/icons/chart_organisation.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_themes {
+  background: url('/img/icons/tag_red.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_services {
+  background: url('/img/icons/star.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_project_types {
+  background: url('/img/icons/bricks.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_projects {
+  background: url('/img/icons/brick.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_features {
+  background: url('/img/icons/new.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_pages {
+  width: 10em;
+  background: url('/img/icons/layout.png') no-repeat 0% 50%;
+}
+
+li#em_offices {
+  background: url('/img/icons/building.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_principals {
+  background: url('/img/icons/user_gray.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_jobs {
+  background: url('/img/icons/wrench.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_news {
+  background: url('/img/icons/newspaper.png') no-repeat 0% 50%;
+  width: 10em;
+}
+
+li#em_users {
+  background: url('/img/icons/group.png') no-repeat 0% 50%;
+  width: 6em;
+}
+
+li#em_images {
+  background: url('/img/icons/images.png') no-repeat 0% 50%;
+  width: 7em;
+}
+
+li#em_logout {
+  background: url('/img/icons/user_go.png') no-repeat 0% 50%;
+  width: 6em;
+}
+
+li.em_add {
+  background: url('/img/icons/add.png') no-repeat 0% 50%;
+}
+
+li.em_list {
+  background: url('/img/icons/table.png') no-repeat 0% 50%;
+}
+
+li.em_edit {
+  background: url('/img/icons/pencil.png') no-repeat 0% 50%;
+}
+
+li.em_delete {
+  background: url('/img/icons/delete.png') no-repeat 0% 50%;
+}
+
+li.em_folder_back {
+  background: url('/img/icons/folder.png') no-repeat 0% 50%;
+}
+
+li.em_toggle {
+  background: url('/img/icons/cog.png') no-repeat 0% 50%;
+  width: 10em;
+}

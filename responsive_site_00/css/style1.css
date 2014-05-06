@@ -1,0 +1,856 @@
+/********************************************
+	Tag Resets
+********************************************/
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/********************************************
+	Normalize CSS
+	http://necolas.github.com/normalize.css/
+********************************************/
+
+html {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+	display: block;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+input,
+textarea,
+button,
+select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	overflow: auto;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************************
+	Web Fonts
+****************************************** */
+
+/*@font-face {
+    font-family: 'Roboto Condensed Light';
+    src: url('../fonts/robotocondensed-light-webfont.eot');
+    src: url('../fonts/robotocondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-light-webfont.woff') format('woff'),
+         url('../fonts/robotocondensed-light-webfont.ttf') format('truetype'),
+         url('../fonts/robotocondensed-light-webfont.svg#RobotoCondensedLight') format('svg');
+	
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/* ******************************************
+	Custom Styles
+****************************************** */
+
+/*	  For details on font-size:100% see here: 
+      http://filamentgroup.com/lab/how_we_learned_to_leave_body_font_size_alone/ 
+	  
+	  For details on line-height:1 see here:
+      http://meyerweb.com/eric/thoughts/2008/05/06/line-height-abnormal/ 
+
+	  For details on text-size-adjust:100% see here:
+	  https://developer.mozilla.org/en-US/docs/CSS/text-size-adjust 
+*/
+
+html {
+   font-size: 100%;
+   line-height: 1;
+   -moz-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+body {
+	font-family: 'Josefin Sans', 'sans-serif';
+	/*background-image:url(../images/dirty-paper.jpg);*/
+	background-color:#e1dcd8;
+}
+
+p, #resume li {
+	font-size: 1.063em; /* 17px / 16 = 1.063em */
+	line-height: 1.223; /* 1.3 / 1.063 = 1.223 */
+	margin: .612em 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	    font-weight: 100;
+	    }
+		
+h1 {
+	font-size: 3.189em;
+	line-height: 1.223;
+		}
+	
+h2  {
+	font-size: 2.126em;
+	line-height: 1.223;
+		    }
+			
+h1, h2 {
+	text-shadow: 0 2px 2px rgba(0, 0, 0, .65);
+			 }
+			 
+h3 {
+	font-size: 1.382em; 
+	line-height: 1.223;
+		}
+		    
+h4 {
+	font-size: 1em;
+	line-height: 1.56;
+	text-transform: uppercase;
+		}
+		
+h3,h4 {      
+	font-weight: 300;
+	text-transform: uppercase;
+		}
+		
+h5 {
+	font-size: .8125em;
+	line-height: 1.125;
+		}
+
+h5,h6 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: .85em;
+	line-height: 1.53;
+	font-weight: 500;
+		}
+h6 {
+	color: #aaa;
+	font-weight: 200;
+		}
+		
+.wrapper {
+	        padding: 0 .65em;
+	        -webkit-box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+		}
+		
+#masthead {
+			color:#fff;
+		    width:80%;
+			background-color: rgba(255, 102, 51, .4);
+		}
+		
+.block {
+			background-color:#FF6633;
+			opacity:0.4;
+			filter:alpha(opacity=40); /* For IE8 and earlier */	
+	}
+		
+/* Headshot */
+
+#maya {
+		    width: 25%;
+		    height: 0;
+		    padding-bottom: 25%;
+		    }
+    
+#maya img {
+		    width: 100%;
+		    }		
+		
+#nav h3 {
+	text-transform: capitalize;
+		}
+		
+#content article {
+	padding-top: .65em;
+	padding-bottom: 1.3em;
+		}
+		
+#portfolio h4 {
+	line-height: 1.82;
+		}
+
+.box {
+			padding:14px;
+		}
+		
+.box h4 {
+	color: #999;
+	border-top: 4px double #eee;
+	border-bottom: 1px solid #eee;
+	margin-bottom: .975em; /* 3/4 of 1.3 */
+	text-align: center;
+		}
+		
+.box ul {
+	list-style: none;
+	padding: 0;
+		}
+
+#portfolio figure,.box {
+	background: #fff;
+	-moz-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+	-webkit-box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+	box-shadow: 0 0 .325em .13em rgba( 0, 0, 0, .1 );
+	padding: .975em; /* 3/4 of 1.3 */
+		}
+		
+/* Creates hover effect on Portfolio images */
+#portfolio figure:hover,
+.box:hover {
+	 -moz-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	 -webkit-box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+	 box-shadow: 0 0 .65em .325em rgba( 0, 0, 0, .1 );
+				}
+
+/* Image Offset for Indication of Linked Content */
+
+#portfolio figure:hover {
+		 bottom: .26em;
+				}
+		
+section footer {
+	clear: both;
+		   }
+
+#container-nav {
+	/*background:#fff;*/
+}
+
+
+
+#container-content {
+	padding: 24px 0;
+}
+
+#container-footer {
+	padding: 32px 0;
+	background-color:/* rgba(255, 102, 51, .4)*/#c0d6dd;
+	color:#eee;
+	font-weight:100;
+}
+
+img {
+	max-width:100%;
+}
+
+#nav,
+#masthead,
+#content,
+#colophon {
+    margin: 0 3.3%;
+    }
+	
+.curved {
+	padding: 10px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	
+	/*color: #bdd7ca;
+	background: rgb(244, 245, 240);
+	background: -moz-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+	background: -webkit-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+	background: -o-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+	background: -ms-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
+	background: linear-gradient(179deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);*/
+	}
+
+/********************************************
+	Fluid Media
+********************************************/
+
+	figure {
+	    position: relative;
+	}
+
+	figure img,
+	figure object,
+	figure embed,
+	figure video {
+	    display: block;
+	    max-width: 100%; 
+	}
+
+	img {
+	    border: 0;
+	    -ms-interpolation-mode: bicubic;
+	}
+
+	/* 
+	interpolation-mode
+	http://css-tricks.com/ie-fix-bicubic-scaling-for-images/
+	 */
+	
+
+
+/* ******************************************
+	   Form Styles Basic Layout
+****************************************** */
+
+	form {
+	    padding: 0 0 1.3em;
+	    }
+    
+	form ul {
+	    list-style: none;
+	    padding: 1.3em 0 0;
+	    }
+    
+	form li {
+	    padding: 0 0 .65em;
+	    }
+	
+	legend {
+		font-size: 1.382em; 
+		line-height: 1.223;
+		}
+		    
+	label {
+	    display: block;
+		font-size: 1em;
+		line-height: 1.56;
+	    padding: 0 0 .325em;
+		}
+		
+	legend, label {      
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #fff;
+		}
+	
+	input,
+	textarea {
+	    display: block;
+	    width: 100%;
+	    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		line-height: 1.3;
+		font-weight: 500;
+	    padding: .65em;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    }
+
+	/**
+	 * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+	 * 2. Improve readability and alignment in all browsers.
+	 */
+
+	textarea {
+	    padding-bottom: 10%;
+	    overflow: auto; /* 1 */
+	    vertical-align: top; /* 2 */
+	    }
+
+	.send {
+	    display: inline-block;
+	    max-width: 30em;
+	    font-size: 1em;
+	    line-height: 1;
+	    font-weight: 500;
+	    color: #fff;
+	    text-decoration: none;
+	    background: #a39374;
+	    margin: .65em .26em;
+	    padding: .975em;
+	    border: 0;
+	    border-radius: 1.3em;
+	    text-shadow: 0 -1px 1px rgba(0, 0, 0, .65);
+	    }
+    
+	.send:hover {
+	    background: #a19b8d;
+	    }
+    
+	.send:active,
+	.send:focus {
+	    background: #a19b8d;
+	    }
+
+/* Float Clearing http://nicolasgallagher.com/micro-clearfix-hack */
+
+.group:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    clear: both;
+}
+
+.group {
+    *zoom: 1; /* 3 */
+    }
+
+	/* ******************************************
+	    IE 7 and below, legacy browser style fixes
+	****************************************** */
+
+	.ie .wrapper {
+	    *behavior: url("http://cordial-emily.com/responsive_site/js/boxsizing.htc");
+	}
+
+	/* Clearfix */
+
+	.group {
+	    *zoom: 1;
+	    }
+
+
+/* ******************************************
+			Media Queries for screen less than 45em (720px)
+****************************************** */
+	@media screen and (max-width: 45em) {
+	#container-header {
+		background: #aef0fc url("../images/profile_outline_opace.2.2.png") no-repeat top center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		padding: 10% 0;
+
+			}
+	#portfolio figure {
+		max-width: 25em;
+	}
+		}	
+
+/* ******************************************
+	Media Queries for screen wider than 45em (720px)
+****************************************** */
+
+	@media screen and (min-width: 45em) {
+
+	    body {
+	        font-size: 107.692307692308%;
+	        }
+
+		#portfolio article,
+		#resume article {
+			float: left;
+			width: 33.333%;
+		}
+		
+		#masthead {
+			max-width:40em;
+		}
+		#nav,
+		#masthead,
+		#content,
+		#colophon {
+		    margin: 0 5.5%;
+		    }
+			
+		#container-header {
+			background: #2ad5f4 url("../images/profile_outline_opace.1.1.png") no-repeat top center;
+			padding:5% 0;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+		}
+			
+			
+	    #nav label {
+	        display: none;
+	    }
+			
+		.name, .email {
+			    float: left;
+			    width: 50%;
+			    -webkit-box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    box-sizing: border-box;
+			    }
+    
+		.name {
+			    padding-right: .65em;
+			    }
+    
+		.email {
+			    padding-left: .65em;
+			    }
+    
+		.send {
+			    width: 48.6%;
+			    }
+	
+	}
+	
+	/* ******************************************
+		Media Queries for screen wider than 60em (960px)
+	****************************************** */
+	
+	@media (min-width: 60em) {
+
+	.name, .email {
+	    padding-right: 1.3em;
+	    padding-left: 0;
+	    clear: both;
+	    }
+    
+	.message textarea {
+	    width: 50%;
+	    }
+    
+	.send {
+	    width: 25%;
+	    margin-left: 50%;
+	    }
+	/* Form Fixes, IE7 and below */
+
+	.ie .message textarea {
+		*width: 49.9%;
+		}
+	
+	.ie .send {
+		*margin-left: 46.7%;
+		}
+    
+	}
+
+
+/* ******************************************
+	Print Styles
+****************************************** */
+@media print and (max-width: 8.5in){
+	
+	#masthead {
+		color:black;
+	}
+	
+	#container-header {
+		height: auto;
+	}
+	
+	img {
+		width:2in;
+	}
+	
+	#portfolio	{
+		float:left;
+		width:45%;
+	}
+	
+	#resume	{
+		float:right;
+		width:45%;
+	}
+	
+	#container-footer	{
+		clear:both;
+	}
+	
+}
+	
+/* ******************************************
+    IE 8 and below, legacy browser style fixes
+****************************************** */
+
+/* Figures/Images */
+
+.ie #portfolio figure {
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+/* "*" hack applies only to IE7 and below */
+
+.ie #portfolio figure {
+    *width: auto;
+    }
+   
+/* Navigation */
+
+/* IE8 .checked class for checkbox.js */
+
+#nav input[type=checkbox].checked ~ nav {
+    height: auto;
+    overflow: visible;  
+}
+
+/* Always show nav, IE7 and below */
+
+.ie #nav nav {
+    *height: auto;
+    *overflow: visible;  
+}
+
+/* Hide navicon, IE7 and below */
+
+.ie #nav label { 
+    *background: none;
+    }
+	
+	
+     
+/* Below-final styles for navigation */
+#nav {
+    padding: .65em 0; 
+}
+#nav h3 {
+    float: left;
+    text-transform: capitalize; 
+}
+/* - Remove <ul> list-style and default padding.
+- Add a border-top to separate each <li>.
+- Add a border-bottom to <ul> to wrap-up border styling. 
+- Add margin to separate, push off <ul> from heading/navicon and below #masthead section.*/
+#nav ul {
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    margin: .65em 0 .39em;
+}
+
+#nav li {
+   border-top: 1px solid #eee;
+}
+/* - Style inline <a> to become a block element.
+- Update font-size to reflect foundation font scale defined by body text (<p>).
+- Override default link color
+- Remove default <a> text-decoration of underline.
+- Add padding, keeping horizontal and vertical rhythm.*/
+#nav a {
+   display: block;
+   font-size: 1.063em;
+   color: #333;
+   text-decoration: none;
+   padding: .975em 1.3em;
+}
+#nav a:hover {
+   background: #f8f8f8;
+}
+/* Hide <nav> off-screen  http://37signals.com/svn/posts/3126-another-9999px ]*/
+#nav nav {
+    height: 0;
+    overflow: hidden;
+}
+body { 
+    -webkit-animation: bugfix infinite 1s; 
+}
+
+@-webkit-keyframes bugfix {
+    from {padding: 0;} 
+    to {padding: 0;} 
+}
+#nav input[type=checkbox] {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+/* 2. Restore <label> element (Removed in min-width: 45em media query).
+3. Present <label> as navicon using a background-image.
+4. Hide <label> content - "Menu" - off-screen using negative text-indent.
+5. Style <label> to behave like a link using cursor and user-select properties.*/
+#nav label { 
+    display: block;
+    background: url("../img/icon-menu.png") no-repeat right center;
+    text-indent: -999em;
+    cursor: pointer;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}	
+/* 6. Show <nav> on-screen / drop-down menu TOGGLE MENU OFF AND ON*/
+#nav input[type=checkbox]:checked ~ nav {
+    height: auto;
+    overflow: hidden;  
+}	
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+/*1. Remove padding from one-column layout style. */
+    #nav {
+        padding: 0;
+    }
+/* 2. Adjust headline baseline using margin-top to align with horizontal menu and margin-right to create a gap/division from the two types of content. */
+    #nav h3 {
+         margin: .39em 1.3em 0 0;
+    }
+    #nav label {
+        display: none;
+    }
+    /* 4. Show <nav> on-screen. */
+    #nav nav {
+        height: auto;
+        overflow: visible;
+    }
+   /* 5. Remove border and margin from one-column layout style.*/
+    #nav ul {
+        border: 0;
+        margin: 0;
+     }
+	#nav li {
+        display: inline;
+        border: 0;
+    }
+	/* 8. Display <a> from block to inline-block to remain inline for horizontal menu layout.*/
+    #nav a {
+        display: inline-block;
+        }
+}
+#maya img {
+	padding: 10px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	}
+
+/* ******************************************
+    IE 8 and below, legacy browser style fixes
+****************************************** */
+
+/* Figures/Images */
+
+.ie #portfolio figure {
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+/* "*" hack applies only to IE7 and below */
+
+.ie #portfolio figure {
+    *width: auto;
+    }
+   
+/* Navigation */
+
+/* IE8 .checked class for checkbox.js */
+
+#nav input[type=checkbox].checked ~ nav {
+    height: auto;
+    overflow: visible;  
+}
+
+/* Always show nav, IE7 and below */
+
+.ie #nav nav {
+    *height: auto;
+    *overflow: visible;  
+}
+
+/* Hide navicon, IE7 and below */
+
+.ie #nav label { 
+    *background: none;
+    }
+     
+/* box-sizing polyfill, IE7 and below (The URL in .ie textarea is placeholder only. You will need to replace with path to your domain) */
+
+.ie .wrapper,
+.ie .name,
+.ie .email,
+.ie input,
+.ie textarea {
+    *behavior: url("js/boxsizing.htc");
+}
