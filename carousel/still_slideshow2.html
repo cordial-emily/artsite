@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emily Schleiner's Website, Stills</title>
+
+<link rel=stylesheet href="css/site.css">
+<link rel=stylesheet href="css/demo-slideshow.css">
+
+<script src="scripts/jquery.js"></script>
+<script src="scripts/jquery.cycle2.js"></script>
+
+</head>
+<body>
+
+
+<div id="main">
+
+<script src="scripts/jquery.cycle2.scrollVert.js"></script>
+
+<style> 
+.external { position: static }
+.external > * { margin: 0 5px }
+.cycle-pager { display: block; }
+
+.example-pager { text-align: center; width: 100%; z-index: 500; top: 10px; overflow: hidden; }
+.example-pager span { font-size: 50px; width: 16px; height: 16px; display: inline-block; color: #ddd; }
+.example-pager span.cycle-pager-active { color: #D69746;}
+.example-pager > * { cursor: pointer;}
+.title_text00 { display: block; margin-left: 35%; }
+
+
+</style>
+
+<div id="adv-custom-caption" class="title_text00"></div>
+
+
+<div class="cycle-slideshow" 
+    data-cycle-fx=scrollHorz
+    data-cycle-timeout=0
+    data-cycle-pager="#no-template-pager"
+    data-cycle-pager-template=""
+    data-cycle-caption="#adv-custom-caption"
+    data-cycle-caption-template="{{cycleTitle}}"
+    >
+    <img src="carousel/carousel_sensmem.jpg" data-cycle-title="'Sensory Memory' <br>A tarot card based on sensory memory in people and computers. <br>Painting on paper. <br>2009, Emily Schleiner">
+    <img src="carousel/carousel_shortterm.jpg" data-cycle-title="'Short Term Memory' <br>A tarot card based on short term (RAM) memory in people and computers. <br>Painting on paper. <br>2009, Emily Schleiner">
+    <img src="carousel/carousel_longterm_hd.jpg" data-cycle-title="'Longterm HD' <br>A tarot card based on long term memeory in people and computers. <br>Painting on paper. <br>2009, Emily Schleiner">
+    <img src="carousel/carousel_corpo.jpg" data-cycle-title="'Ration Unity' <br>Wordplay on a business jacket <br>Multimedia on canvas <br>2007, Emily Schleiner">
+    <img src="carousel/carousel_cynicalpills.jpg" data-cycle-title="'Not intended for pregnant women' or 'Cynical Pills' <br>Digital Composite <br>2007, Emily Schleiner">
+    <img src="carousel/carousel_eating_my_body.jpg" data-cycle-title="'Eating my body' <br>Performance <br>Video Still <br>2003, Emily Schleiner">
+    <img src="carousel/carousel_pinatajenny.jpg" data-cycle-title="'Gifting Self Destruction in Washington Square Park'  <br>Poster <br>2007, Emily Schleiner">
+    <img src="carousel/carousel_strength.jpg" data-cycle-title="'Strength' <br>Flyer <br>2006, Emily Schleiner">
+    <img src="carousel/carousel_sunsalutation.jpg"  data-cycle-title="'Sun Salutation on Halsey St' <br>Mural <br>2006, Emily Schleiner">
+    <img src="carousel/carousel_cake.jpg" data-cycle-title="'The Sharing of Cake and Questions' <br>Newletter <br>2002, Emily Schleiner">
+    <img src="carousel/carousel_weaselcombo.jpg" data-cycle-title="'Sinister Animals' <br>Poster <br>2008, Emily Schleiner">
+    
+    <img src="carousel/carousel_weaselcombo.jpg">
+</div>
+<div id=no-template-pager class="cycle-pager external">
+    <!-- using thumbnail image files would be even better! -->
+    <img src="carousel/thumbnails/senseMem4_small.jpg" width=20 height=20>
+    <img src="carousel/thumbnails/shortterm_ram_small.jpg" width=20 height=20>
+    <img src="carousel/thumbnails/longterm_harddrive_small.jpg" width=20 height=20>
+    <img src="carousel/thumbnails/still.1.corpo2.0.1small.jpg" width=20 height=20>
+    <img src="carousel/thumbnails/still.2.0_small.jpg" width=20 height=20> 
+    <img src="carousel/thumbnails/still.7.0_small.jpg" width=20 height=20> 
+    <img src="carousel/thumbnails/still.3.0_small.jpg" width=20 height=20>
+    <img src="carousel/thumbnails/still.6.0_small.jpg" width=20 height=20>
+    <img src="carousel/thumbnails/still.5.0_small.jpg" width=20 height=20>
+    <img src="carousel/thumbnails/still.8.0_small.jpg" width=20 height=20>
+    <img src="carousel/thumbnails/still.4.0_small.jpg" width=20 height=20>
+</div>
+
+
+
+
+</div> <!-- #main -->
+
+
+
+</body>
+</html>
