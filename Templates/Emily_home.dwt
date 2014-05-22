@@ -5,7 +5,7 @@
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>emily schleiner's website</title>
 <!-- TemplateEndEditable -->
-<link href="layout.css" rel="stylesheet" type="text/css" />
+<link href="../css_/layout.css" rel="stylesheet" type="text/css" />
 <!-- TemplateBeginEditable name="head" -->
 <style type="text/css">
 <!--
@@ -52,7 +52,7 @@
             <div id="wrapper">
                 
                 <div id="logo">
-                <div align="center"><img src="../heading_perspective.jpg" alt="website of emily schleiner" width="770" height="162" /></div>
+                <div align="center"><img src="../images_/icons/heading_perspective.jpg" alt="website of emily schleiner" width="770" height="162" /></div>
               </div>
                 
                 <div id="navigation">
