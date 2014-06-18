@@ -1,0 +1,277 @@
+/*custom styles for emily schleiner's website*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+h1, h2, h3, h4, h5{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+}
+.top {
+    background-color: #ffffff;
+}
+.top .navbar-brand {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 10px;
+    background-color: #ded5c5;
+    color: #474747;
+    text-decoration: none;
+}
+.top .container {
+    padding: 0;
+}
+.banner {
+    background-color: #ffffff;
+}
+.banner .container {
+    background-color: #ded5c5;
+ 
+    min-height: 600px;
+    padding: 40px 30px 30px 40px;
+}
+/*.banner .container_art {
+    background-color: #ded5c5;
+    min-height: 600px;
+    padding: 40px 30px 30px 40px;
+    /*background-image: url('../images/emily_schleiner.4.5.jpg');*/
+   /* background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    display: table;
+}*/
+.subcontainer {
+    background-image: url('../images/icons/emily_schleiner.4.5.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.banner .container p {
+    font-size: 22px;
+    padding-left: 5px;
+    font-weight: 300;
+}
+.floating_title_art {
+    margin-bottom: 2em;
+}
+.floating_title {
+    padding-left: 36%;
+    padding-top: 12%;
+}
+.thumbnail_ {
+    position:relative;
+    width: 10em;
+    height: 10em;
+    margin-bottom: 2em;
+    box-sizing: border-box;
+    float:left;
+    margin-right: 2em;
+}
+.thumbnail_text {
+    margin-left: 5%;
+    margin-right: 5%;
+    bottom: 0%;
+    position: absolute;
+    color: #ded5c5;
+    text-align: center;
+    background-image: url('../images/icons/opaque_fill.png');
+}
+.thumbnail_text span {
+    color:#000000;
+}
+.gradient_container{
+    background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(155,158,144,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(155,158,144,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(155,158,144,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(155,158,144,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(155,158,144,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(155,158,144,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9b9e90', GradientType=0 );
+}
+.middle .container .focuslist ul {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 1.75;
+    list-style: none;
+    letter-spacing:1px;
+}
+.middle .container .col-md-4 ul li::first-letter { 
+    font-size:120%;
+    color:#c04d4a;
+}
+
+.middle .container {
+    background-color: #FFF;
+    min-height: 300px;
+    padding-bottom: 20px;
+}
+.navbar-nav li a {
+    /*color: #CCC;*/
+    color: #A70B0B;
+    font-family: 'Lato', sans-serif;
+}
+.navbar-nav li a:hover {
+    background-color: #ded5c5;
+}
+.bottom {
+    /*background-color: #3f4032;*/
+}
+.bottom .container {
+    min-height: 150px;
+    background-image: url('../images/icons/pattern.3.png');
+}
+.bottom .container h4 {
+    color: #000000;
+}
+.bottom .container p {
+    color: #666;
+}
+.navbar-toggle {
+    color: #009b9b;
+    font-size: 32px;
+    margin: 3px;
+    padding: 2px 5px;
+    line-height: 32px;
+}
+.navbar-toggle:hover {
+    background-color: #373737;
+}
+.navbar-nav {
+    margin: 0;
+}
+
+.content p {
+    line-height: 30px;
+    font-size: 16px;
+}
+.contact {
+    /*text-align: center;*/
+}
+.join {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    width: 50em;
+    
+}
+.send {
+    display: inline-block;
+    /*max-width: 30em;*/
+    font-size: 1em;
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    background: #a39374;
+    /*margin: .65em .26em;*/
+    padding: .975em;
+    border: 0;
+    border-radius: 1.3em;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, .65);
+    }
+
+.send:hover {
+    background: #a19b8d;
+    }
+
+.send:active,
+.send:focus {
+    background: #a19b8d;
+    }
+.emailing {
+    width: 50em;
+}
+/*cv styles*/
+.date_style {
+    /*padding-right: 50px;*/
+    color:#666666;
+    font-size: 110%;
+    font-weight: 200;
+}
+.description {
+    letter-spacing:1px;
+    line-height: 140%;
+}
+.ital span {
+    font-style:italic;
+}
+.lists_a {
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight:200;
+    line-height:150%;
+    font-size:110%;
+}
+nav nav-tabs ul li a {
+    text-decoration: none;
+}
+nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
+    color:#756ba6;
+}
+/*jquery rollover on art page*/
+#box1 {
+	float: left;
+	width: 140px;
+	height: 140px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	line-height: 90px;
+	text-align: center;
+    border: none;
+    padding-top: 5px;
+}
+
+#box1 {
+	box-shadow: 0 0 10px #000000;
+	-moz-box-shadow: 0 0 10px #000000;
+	-webkit-box-shadow: 0 0 10px #000000;
+}
+
+#box2 {
+	box-shadow: 0 0 10px #699, 0 0 10px #969, 0 0 10px #996, 0 0 10px #669;
+	-moz-box-shadow: 0 0 10px #699, 0 0 10px #969, 0 0 10px #996, 0 0 10px #669;
+	-webkit-box-shadow: 0 0 10px #699, 0 0 10px #969, 0 0 10px #996, 0 0 10px #669;
+}
+
+#box3 {
+	box-shadow: inset 0 0 0 #f80;
+	-moz-box-shadow: inset 0 0 0 #f80;
+	-webkit-box-shadow: inset 0 0 0 #f80;
+}
+
+#box4 {
+	position: relative;
+	box-shadow: 8px 8px 15px #666;
+	-moz-box-shadow: 8px 8px 15px #666;
+	-webkit-box-shadow: 8px 8px 15px #666;
+}
+
+#test1 {
+    box-shadow: 0 0 30px rgb(64,64,255);
+    -moz-box-shadow: 0 0 30px rgb(64,64,255);
+    -webkit-box-shadow: 0 0 30px rgb(64,64,255);
+}
+
+
+
+/* ******************************************
+			Media Queries for screen less than 45em (720px)
+****************************************** */
+@media screen and (max-width: 1000px) {
+	.container-banner {
+		background-image: url('../images/icons/emily_schleiner.4.5.jpg');
+			}
+	.banner .container_art img{
+		margin-right: 50px;
+	}
+		}

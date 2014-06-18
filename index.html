@@ -1,177 +1,135 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
+<html lang="en">
 <head>
-<title> emily schleiner's website</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic' rel='stylesheet' type='text/css'>
-<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<style type="text/css">
-	html {
-		overflow: hidden;
-	}
-	body {
-		margin: 0px;
-		padding: 0px;
-		background: #fcfbfa;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-	.alpha {
-		filter: alpha(opacity=20);
-		opacity:0.2;
-		left: -1000px;
-		position: absolute;
-	} 
-	#box {
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 11px;
-		color: #666666;
-		margin-right: auto;
-		margin-left: auto;
+    <meta charset="utf-8">
+<!-- Set the viewport so this responsive site displays correctly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emily Schleiner's Website</title>
+    <!-- Include bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
     }
-	.botton {
-/*<!--rounded corners-->*/
--webkit-border-radius: 25px;
--moz-border-radius: 25px;
-border-radius: 25px;
-
-/*color: #bdd7ca;*/
-background: rgb(244, 245, 240);
-background: -moz-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
-background: -webkit-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
-background: -o-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
-background: -ms-linear-gradient(89deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
-background: linear-gradient(179deg, rgb(244, 245, 240) 0%, rgb(245, 253, 252) 70%);
--webkit-box-shadow: -2px 1px 18px 0px rgba(69, 50, 50, 0.48);
--moz-box-shadow:    -2px 1px 18px 0px rgba(69, 50, 50, 0.48);
-box-shadow:         -2px 1px 18px 0px rgba(69, 50, 50, 0.48);
-border: 0px;
-border-color: #def0e7;
-border-style: solid;
-padding: 0px;
-display: block;
-font-family: 'Josefin Sans', 'sans-serif';
-min-height: 30px;
-margin-left: 40%;
-margin-right: 40%;
-margin-top: 15px;
-margin-bottom: 100px;
-padding: 20px;
-font-size: 30px;
-float: left;
-font-style: none;
-
-
-}
-a:link {color:#666;}      /* unvisited link */
-a:visited {color:#999;}  /* visited link */
-a:hover {color:#9CC;}  /* mouse over link */
-a:active {color:#666;}
-
-</style>
-<!--   HERE IS A JQUERY FADE (usually in a seperate file)-->
-<script src="scripts_/jquery-1.6.2.min.js"></script>
-<script src="scripts_/jquery-1.2.1.min.js" type="text/javascript"></script>
-<script type="text/javascrip t"> jQuery.noConflict() </script>
-
-<script type="text/javascript">
-  
-	$(function() {
-		$('a').ready(function() {
-			$('#box').hide().fadeIn(4000);
-		});
-	});
-
-</script>
-<!--   END OF JQUERY FADE --> 
-<script type="text/javascript">
-	
-	// "lens flare" behavior from http://www.dhteumeuleu.com", a really great resource. thank you!
-	//////////////////////////////////////////////////////////////////////
-	var cx;
-	var cy;
-	var lx;
-	var ly;
-	var px = 0;
-	var py = 0;
-	
-	////////////////////
-	var dim = 256;
-	///////////////////
-	
-	function LensFlare(){
-		px -= (px - lx) * .1;
-		py -= (py - ly) * .1;
-		AnimLens("p1",1,1,0,0,1);
-		AnimLens("p2",.5,2,0,0,1);
-		AnimLens("p3",.25,3,0,0,1);
-		AnimLens("p4",1,8,0,0,1);
-		AnimLens("p5",.5,-2,0,0,1);
-		AnimLens("p6",.25,-4,0,0,1);
-		AnimLens("p7",.2,-5.5,0,0,1);
-		AnimLens("p8",3.375,-1,40,120,1.33);
-		setTimeout(LensFlare,16);
-	}
-	function AnimLens(Lens,iScale,dist,x,y,r){
-		var vxv = (cx - px) / dist;
-		var vyv = (cy - py) / dist;
-		var d = dim * iScale;
-		css = document.getElementById(Lens).style;
-		css.top = Math.round(vyv - ((d / r) * .5) + cy + y)+'px';
-		css.left = Math.round(vxv - (d * .5) + cx + x)+'px'
-		css.width = Math.round(d)+'px'
-		css.height = Math.round(d / r)+'px'
-	}
-	
-	function resize() {
-		cx = document.body.offsetWidth * .5;
-		cy = document.body.offsetHeight * .5;
-	}
-	
-	onresize = resize;
-	document.onmousemove = function(e){
-		if (window.event) e = window.event;
-		lx = (e.x || e.clientX);
-		ly = (e.y || e.clientY);
-	}
-	
-	onload = function() {
-		resize();
-		lx = cx / 2;
-		ly = cy / 2;
-		LensFlare();
-	}
-	
-</script>
-
+  </style>
+<![endif]-->
 </head>
-
 <body>
-
-<div id=img style="position: absolute; z-index:-1;">
-	<img id="p8" src="images_/intro/sun.3.gif" style="position:absolute;left:-1000px;border:none;"> 
-	<img id="p1" class="alpha" src="images_/intro/lf2.gif">
-	<img id="p2" class="alpha" src="images_/intro/lf1.gif">
-	<img id="p3" class="alpha" src="images_/intro/lf3.gif">
-	<img id="p4" class="alpha" src="images_/intro/lf2.gif">
-	<img id="p5" class="alpha" src="images_/intro/lf1.gif">
-	<img id="p6" class="alpha" src="images_/intro/lf1.gif">
-	<img id="p7" class="alpha" src="images_/intro/lf3.gif">
-</div>
-
-<div id="box" style="z-index:-1;">
-  
+<!-- Site header and navigation -->
+    <header class="top" role="header">
+        <div class="container">
+            <a href="index.html" class="navbar-brand pull-left">
+                ABOUT
+            </a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+            <nav class="navbar-collapse collapse" role="navigation">
+                <ul class="navbar-nav nav">
+                    <li><a href="art.html">Art</a></li>
+                    <li><a href="c.v.html">C.V.</a></li>
+                    <li><a href="http://knownhabits.wordpress.com/">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<!-- Site banner -->
+    <div class="banner">
+        <div class="container subcontainer">
+         
+          <div class="floating_title">
+            <h1>Emily Schleiner</h1>
+            <h5>. . . a Brooklyn, NY and Davis, CA-based artist, designer, and thinker.</h5>
+          </div><!--end floating_title-->
+         
+        </div>
+    </div>
+    
+<!-- Middle content section -->
+  <div class="gradient_container">
+    <div class="middle">
+        <div class="container">
+            <div class="col-md-4 content focuslist">
+               
+                    <h2 style="padding-bottom:10px">Working collaboratively on:</h2>
+                    <p><ul>
+                        <li>Visual and Electronic Art</li>
+                        <li>Web Design</li>
+                        <li>Research on Art & Technology</li>
+                    </ul></p>
+                     </h2>
+            </div><!--col-md-4 content"-->
+        
       
-      <a href = "http://cordial-emily.com/responsive_site/portfolio_work_altered.html"><p class="botton" align="center">mobile site </p></a>
-      <p align="center"><a href="Emily_home.html"><img src="images_/intro/SunDial_slide_one.1.0.gif" alt="Emily Schleiner's Website, picture of sundial" width="800" height="533" border= none/></a></p>
-</div>
+            <div class="col-md-4 content">
+                <br></br>
+                    <form name="contact_form" method="post" action="php_/send_form_email.php">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 align="center" style="color:sienna;font-size:1.75em;font-weight: 400;">Join the announcement mailing list: </h5><br>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="email"><p>&nbsp Email &nbsp</p></label>
+                                    </div>
 
+                                    <div class="col-md-9">
+                                  <input name="email" type="text" size="30" maxlength="80" />
+                                    </div>
+
+                                </div><!--row-->
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <br>
+                                        <input type="submit" class="send btn-block" data-role="none" value="Submit"> 
+                                    </div> <!--col-xs-10-->
+                                    <div class="col-md-1">
+                                    </div> <!--col-xs-2-->
+                                </div><!--row-->
+                          </div><!--col-md-12--> 
+                         
+                        </div><!--row-->
+            
+                   </form>
+            </div><!--col-md-4 content"-->
+    
+    
+            <div class="col-md-4">
+                <h2>Upcoming Events</h2>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="http://www.davismakerspace.org/event/artabout-20140711" target="_blank">Davis Makerspace ArtAbout</a></li>
+                    <li><a href="http://www.avanca.org/EN/inicio.php" target="_blank">AVANCA 2014 Film Festival, International Meeting of Cinema, TV, Video, and Multimedia</a></li>
+                    <li><a href="http://www.broadwayaugmented.net/events-2/" target="_blank">Broadway Augmented</a></li>
+                   
+                </ul>
+            </div><!--col-md-4 content-->
+          </div><!--container-->
+        </div><!--"middle"-->
+    
+    
+    
+<!-- Site footer -->
+    <div class="bottom">
+        <div class="container">
+            <div class="col-md-4">
+                <br></br>
+                <h4>cordial.emily@gmail.com</h4>
+                <p><a href="https://twitter.com/cordial_emily"> <img src="images/icons/twitter-icon.png" width="50" height="50" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/CordialEmily"> <img src="images/icons/fb2.png" width="50" height="50" /></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="feed://knownhabits.wordpress.com/feed/"><img src="images/icons/rss-feed.png" width="50" height="50" /></a></p>
+            </div>
+            <div class="col-md-4">
+                <!--<h3><span class="glyphicon glyphicon-star"></span> Footer section 2</h3>
+                <p>Content for the second footer section.</p>-->
+            </div>
+            <div class="col-md-4">
+                <!--<h3><span class="glyphicon glyphicon-music"></span> Footer section 3</h3>
+                <p>Content for the third footer section.</p>-->
+            </div>
+        </div>
+    </div>
+  </div><!--end gradient_container-->
+<!-- Include jQuery and bootstrap JS plugins -->
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
