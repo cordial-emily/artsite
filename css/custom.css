@@ -31,8 +31,6 @@ body {
 }
 .banner .container {
     background-color: #ded5c5;
- 
-    min-height: 600px;
     padding: 40px 30px 30px 40px;
 }
 /*.banner .container_art {
@@ -49,9 +47,6 @@ body {
     display: table;
 }*/
 .subcontainer {
-    background-image: url('../images/icons/emily_schleiner.4.5.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
 }
 .banner .container p {
     font-size: 22px;
@@ -267,11 +262,34 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
 /* ******************************************
 			Media Queries for screen less than 45em (720px)
 ****************************************** */
-@media screen and (max-width: 1000px) {
-	.container-banner {
-		background-image: url('../images/icons/emily_schleiner.4.5.jpg');
+@media screen and (max-width: 600px) {
+    .banner .container {
+        min-height: 260px;
+    }
+	.subcontainer {
+		background-image: url('../images/icons/emily_schleiner.4.6.jpg');
+        background-position:top center;
+        background-repeat: no-repeat;
 			}
-	.banner .container_art img{
+	.subcontainer img{
+		margin-right: 50px;
+	}
+    .floating_title h5{
+    background-color: rgba(219,210,195,0.7);
+    padding: 2%;
+    }
+		}
+@media screen and (min-width: 601px) {
+    .banner .container {
+        min-height: 600px;
+    }
+	.subcontainer {
+		background-image: url('../images/icons/emily_schleiner.4.5.jpg');
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+			}
+	.subcontainer img{
 		margin-right: 50px;
 	}
 		}
