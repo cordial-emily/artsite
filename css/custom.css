@@ -221,6 +221,10 @@ nav nav-tabs ul li a {
 nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
     color:#756ba6;
 }
+.container .navbar-collapse {
+    padding-left: 0px;
+}
+
 /*jquery rollover on art page*/
 .box1 {
 	float: left;

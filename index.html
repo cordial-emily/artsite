@@ -19,19 +19,20 @@
 <!-- Site header and navigation -->
     <header class="top" role="header">
         <div class="container">
-            <a href="index.html" class="navbar-brand pull-left">
+            <!--<a href="index.html" class="navbar-brand pull-left">
                 ABOUT
-            </a>
+            </a>-->
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="glyphicon glyphicon-align-justify"></span>
             </button>
-            <nav class="navbar-collapse collapse" role="navigation">
+            <div class="navbar-collapse collapse" role="navigation">
                 <ul class="navbar-nav nav">
+                    <li class="navbar-brand"><a href="index.html">ABOUT</a></li>
                     <li><a href="art.html">Art</a></li>
                     <li><a href="c.v.html">C.V.</a></li>
                     <li><a href="http://knownhabits.wordpress.com/">Blog</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
     
@@ -69,14 +70,11 @@
                     <form name="contact_form" method="post" action="php_/send_form_email.php">
                         <div class="row">
                             <div class="col-md-12">
-                                <h5 align="center" style="color:sienna;font-size:1.75em;font-weight: 400;">Join the announcement mailing list: </h5><br>
+                                <h5 align="center" style="color:sienna;font-size:1.75em;font-weight: 400; padding-right:.3em">Join the announcement mailing list: </h5><br>
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <label for="email"><p>&nbsp Email &nbsp</p></label>
-                                    </div>
 
-                                    <div class="col-md-9">
-                                  <input name="email" type="text" size="30" maxlength="80" />
+                                    <div class="col-md-11">
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email" type="text" size="30" maxlength="80" />
                                     </div>
 
                                 </div><!--row-->
