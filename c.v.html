@@ -39,40 +39,45 @@
     
 <!-- Site banner -->
     <div class="banner">
+      <article onload="codeYear();">
         <div class="container bea_border">
           <div class="row">
             <div class="col-md-12">
             <h1>PROFESSIONAL &amp; ACADEMIC PROFILE</h1>
-            <div class="divide"></div>
-            <h4>
-                <ul style="list-style: circle; font-family: 'Josefin Sans', sans-serif; font-weight:400; border-top-style: solid; border-width: 5px;">
-                    <br></br>       
-                <li>Graphic design and Web-design at Eyebeam Art and Technology Center and The Wardrobe, website and event signage. See my <a href="http://www.coroflot.com/emily_schleiner">design portfolio</a>.</li><br>
-                <li>University instructor in 2-dimensional experimental animation course.</li><br>
-                <li>Film Screening Curator at Oddball Film and Video Archive.</li><br>
-                <li>Interactive art installation exhibitions in Marian Spore Art Museum and 58 N. 6th Media Labs in New York. </li><br>
-                <li>Extensive collaboration experience in graduate-level, grant-funded projects such as the Chashama Windows Performance spaces. </li><br>
-                <li>An academic focus on media theory, art, and culture; experience presenting at international conferences such as Inter-Disciplinary.Net’s Knowledge, Power, &amp; Intellectuals and Trondheim Electronic Art Center’s Making Reality Real.</li><br>
-                <li>Experience overseeing assistants and coordinating large-scale departmental equipment organization for PIMA at Brooklyn College, CUNY.</li><br>
-                <li>Community leadership and committee work in a student-run / consensus-based program in University of Washington’s CEP.</li><br>
-                <li>Expediency  with administrative work such as writing reports, and creating contract lists and reviewing  literary submissions at Curtis Brown, Ltd. in New York.</li><br>
-                <li>Serving on the Board of Directors at Davis Makerspace in Davis, CA.</li>
+            
+                <h4>
+                    
+                    <ul style="list-style: circle; font-family: 'Josefin Sans', sans-serif; font-weight:400; border-top-style: solid; border-width: 5px; z-index:-99;">
+                        <br></br>       
+                    <li>Graphic design and Web-design at Eyebeam Art and Technology Center and The Wardrobe, website and event signage. See my <a href="http://www.coroflot.com/emily_schleiner">design portfolio</a>.</li><br>
+                    <li>University instructor in 2-dimensional experimental animation course.</li><br>
+                    <li>Film Screening Curator at Oddball Film and Video Archive.</li><br>
+                    <li>Interactive art installation exhibitions in Marian Spore Art Museum and 58 N. 6th Media Labs in New York. </li><br>
+                    <li>Extensive collaboration experience in graduate-level, grant-funded projects such as the Chashama Windows Performance spaces. </li><br>
+                    <li>An academic focus on media theory, art, and culture; experience presenting at international conferences such as Inter-Disciplinary.Net’s Knowledge, Power, &amp; Intellectuals and Trondheim Electronic Art Center’s Making Reality Real.</li><br>
+                    <li>Experience overseeing assistants and coordinating large-scale departmental equipment organization for PIMA at Brooklyn College, CUNY.</li><br>
+                    <li>Community leadership and committee work in a student-run / consensus-based program in University of Washington’s CEP.</li><br>
+                    <li>Expediency  with administrative work such as writing reports, and creating contract lists and reviewing  literary submissions at Curtis Brown, Ltd. in New York.</li><br>
+                    <li>Serving on the Board of Directors at Davis Makerspace in Davis, CA.</li>
+                    </ul>
+                
+                <br>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#cv">C.V.</a></li>
+                  <li><a href="#artist_resume">Artist's Resume</a></li>
+                  <li><a href="http://bl.ocks.org/clayzermk1/9142407">More on the D3 animation above</a></li>
                 </ul>
-            <br>
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#cv">C.V.</a></li>
-              <li><a href="#artist_resume">Artist's Resume</a></li>
-            </ul>
-            </h4>
+                </h4>  
            </div><!--col-md-12-->
           </div><!--row-->
-        </div>
-    </div>
+        </div><!--container-->
+      </article>
+    </div><!--banner-->
     
 <!-- Middle content section -->
   <div class="gradient_container">
     <div class="middle"><section id="cv">
-        <div class="container">
+        <div class="container d3readjust">
             <div class="row">
                 <div class="col-md-12">
                     <h1 style="border-bottom-style: solid; border-width: 5px; padding-bottom: 15px;">C.V.</h1>
@@ -528,5 +533,7 @@
 <!-- Include jQuery and bootstrap JS plugins -->
 <script src="js/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 </body>
 </html>

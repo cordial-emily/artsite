@@ -33,19 +33,6 @@ body {
     background-color: #ded5c5;
     padding: 40px 30px 30px 40px;
 }
-/*.banner .container_art {
-    background-color: #ded5c5;
-    min-height: 600px;
-    padding: 40px 30px 30px 40px;
-    /*background-image: url('../images/emily_schleiner.4.5.jpg');*/
-   /* background-repeat: no-repeat;
-    background-position: 50% 50%;
-    width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-    box-sizing: border-box;
-    display: table;
-}*/
 .subcontainer {
 }
 .banner .container p {
@@ -91,6 +78,8 @@ background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(155,158,144,1)
 background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(155,158,144,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9b9e90', GradientType=0 );
 }
+
+/*--About Page--*/
 .box_info {
     border-width: 1px;
     border-color: #cccccc;
@@ -195,7 +184,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .emailing {
     width: 50em;
 }
-/*cv styles*/
+/*-----cv styles------------------*/
+.gradient_container .middle #cv .d3readjust {
+    margin-top: -470px;
+}
 .date_style {
     /*padding-right: 50px;*/
     color:#666666;
@@ -224,8 +216,23 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
 .container .navbar-collapse {
     padding-left: 0px;
 }
+.bea_border .row .col-md-12 h4 ul {
+    /*z-index:6;*/
+}
+/*---div with D3 year/time animation-----*/
+body .banner article svg{
+    top: -600px;
+    position:relative;
+   /* z-index:5;*/
+    opacity:0.5
+}
+/*.bea_border .row .col-md-12 h4 codeYear {
+    background: #222;
+    margin-bottom: -600px;
+}*/
 
-/*jquery rollover on art page*/
+
+/*------jquery rollover on art page-------------*/
 .box1 {
 	float: left;
 	width: 140px;
@@ -246,7 +253,7 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
 
 
 /* ******************************************
-			Media Queries for screen less than 45em (720px)
+			Media Queries for screen less than  (600px)
 ****************************************** */
 @media screen and (max-width: 600px) {
     .banner .container {
@@ -264,7 +271,16 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
     background-color: rgba(219,210,195,0.7);
     padding: 2%;
     }
+    body .banner article svg {
+        top: -980px;
+        position: relative;
+        /* z-index: 5; */
+        opacity: 0.5;
+        margin-left: -40%;
 		}
+}
+/********big screen**********/
+
 @media screen and (min-width: 601px) {
     .banner .container {
         min-height: 600px;
@@ -278,4 +294,12 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
 	.subcontainer img{
 		margin-right: 50px;
 	}
-		}
+    body .banner article svg {
+        top: -600px;
+        position: relative;
+        /* z-index: 5; */
+        opacity: 0.5;
+        margin-left: 0%;
+    }
+    
+	}
