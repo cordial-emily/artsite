@@ -22,6 +22,11 @@ body {
     background-color: #ded5c5;
     color: #474747;
     text-decoration: none;
+    display:block;
+}
+.navbar-active1{
+    background-color: #ded5c5;
+    padding: 0 10px;
 }
 .top .container {
     padding: 0;
@@ -301,5 +306,5 @@ body .banner article svg{
         opacity: 0.5;
         margin-left: 0%;
     }
-    
-	}
+
+}
