@@ -32,7 +32,7 @@ body {
     padding: 0;
 }
 .banner {
-    background-color: #ffffff;
+    background-color: #ded5c5;
 }
 .banner .container {
     background-color: #ded5c5;
@@ -125,7 +125,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .bottom .container {
     min-height: 150px;
-    background-image: url('../images/icons/pattern.3.png');
+    /*background-image: url('../images/icons/pattern.3.png');*/
 }
 .bottom .container h4 {
     color: #000000;
