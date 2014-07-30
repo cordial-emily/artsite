@@ -191,7 +191,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 /*-----cv styles------------------*/
 .gradient_container .middle #cv .d3readjust {
-    margin-top: -470px;
+    /*margin-top: -470px;*/
 }
 .date_style {
     /*padding-right: 50px;*/
