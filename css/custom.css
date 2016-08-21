@@ -89,7 +89,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     border-width: 1px;
     border-color: #cccccc;
     border-style: solid;
-    min-height: 300px; 
+    min-height: 300px;
     padding: 5px;
     margin-top: 20px;
     padding-left: 20px;
@@ -102,7 +102,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     list-style: none;
     letter-spacing:1px;
 }
-.middle .container .col-md-4 ul li::first-letter { 
+.middle .container .col-md-4 ul li::first-letter {
     font-size:120%;
     color:#c04d4a;
 }
@@ -160,7 +160,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     padding: 0px;
     margin: 0px;
     width: 50em;
-    
+
 }
 .send {
     display: inline-block;
@@ -207,7 +207,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     font-style:italic;
 }
 .lists_a {
-    font-family: 'Josefin Sans', sans-serif; 
+    font-family: 'Josefin Sans', sans-serif;
     font-weight:200;
     line-height:150%;
     font-size:110%;
@@ -224,6 +224,7 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
 .bea_border .row .col-md-12 h4 ul {
     /*z-index:6;*/
 }
+
 /*---div with D3 year/time animation-----*/
 body .banner article svg{
     top: -600px;

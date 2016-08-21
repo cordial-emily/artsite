@@ -1,0 +1,42 @@
+/** custom css ****/
+
+
+/* hide all ul li list bullets */
+ul {
+    list-style-type: none;
+}
+
+/* main width */
+.container.custom-width {
+    max-width: 800;
+}
+
+/* center gem image */
+.gem-holder {
+    margin-left: 35%;
+    width: 350px;
+    padding-bottom: 30px;
+}
+
+/* center tab text  */
+.panel {
+    padding: 20px;
+}
+
+/* make buttons purple */
+.btn-primary {
+    background-color: #9B2878;
+    border-color: #9B2878;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus{
+    color: #fff;
+    background-color: #9B2878;
+}
+
+/* validate form fields */
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}

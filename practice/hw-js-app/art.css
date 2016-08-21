@@ -1,0 +1,236 @@
+/* body */
+
+body {
+	background: url('rembrant-search.png');
+}
+
+/* search section */
+
+#search {
+	margin-top: 15%;
+	background: rgba(0,0,0, .7);
+	padding: 3em 5% 2em;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+}
+
+/* search text label */
+
+#search label {
+	display: inline-block;
+	/*font-weight: bold;*/
+	font-weight: 300;
+	font-size: 2.3em;
+	line-height: 1.2;
+	color: #ff7b00;
+	vertical-align: middle;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	}
+
+/* search text */
+
+#search_text {
+	padding: .5em;
+	border: 1px solid #ccc;
+	margin: .25em .125em;
+	border-radius: .2em;
+}
+
+/* search button */
+
+#search_button {
+	display: inline-block;
+	font-weight: bold;
+	color: #fff;
+	background: #ff7b00;
+	padding: 0.62em 1.6em;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	margin: .25em .125em;
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 1px;
+}
+
+#search_button:active,
+#search_button:focus {
+	background: #555;
+}
+
+.byline {
+	color:#999A95;
+	font-weight: 100;
+	margin: .3em .1em;
+}
+/* list, details */
+
+#list,
+#details {
+	float: left;
+	margin: 0 0 0 0;
+	background: rgba(248, 244, 239, .8);
+}
+
+#details {
+	margin: 0 3% 20em 0;
+	padding: .5em 2em;
+}
+
+#list ul {
+	padding: 1.2em 1.2em;
+}
+
+#list li {
+	padding: .2em .5em;
+	font-size: 90%;
+  color: #f90;
+  margin: .2em 0;
+  min-height: 4em;
+  border: 1px solid #ccc;
+  list-style-type: none;
+  background: rgba(247, 246, 245, 0.7);
+  border-radius: 5px;
+	text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#list a {
+	font-size: 110%;
+	color: #000;
+	line-height: 1.4em;
+	text-decoration: none;
+	border-bottom: 1px dashed transparent;
+	font-weight: 200;
+
+}
+
+#list a:hover,
+#list a:active,
+#list a:focus {
+}
+
+#list li:hover {
+    background: #FFF;
+}
+
+#details h2 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+		color: #976855;
+}
+
+#details h3 {
+	font: normal 1em/1.2 sans-serif;
+	color: #555;
+	margin: .4em 0 1em;
+	font-weight: 200;
+}
+
+#details h5 {
+		padding: 1em 0 1em 0;
+		font-family: 'Dosis', sans-serif;
+		font-size: 1.6em;
+}
+
+#poster {
+	float: left;
+	padding: 1em;
+	border: 1px solid #ccc;
+	margin: .4em 1.4em .8em 0;
+	min-height: 150px;
+}
+
+#details p {
+	width: 94%;
+	line-height: 1.4em;
+	margin: 1.4em 0;
+}
+/* art table */
+
+.thumbnail {
+    display: inline-block;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    padding: 4px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+}
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #f9f9f9;
+}
+.thumb {
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+}
+
+/* ******************************************
+			Media Queries for screen less than 45em (720px)
+****************************************** */
+	@media screen and (max-width: 45em) {
+		body {
+			background: url('rembrant-search-small.png');
+		}
+		#list {
+			width: 100%;
+		}
+
+		#details {
+			width: 85%;
+			margin-left: 0% !important;
+		}
+		#poster {
+			width: 90%;
+		}
+	}
+/* ******************************************
+	Media Queries for screen wider than 45em (720px)
+****************************************** */
+
+	@media screen and (min-width: 45em) {
+		body {
+			background: url('rembrant-search-small.png');
+		}
+		#list {
+			width: 29%;
+			margin-left: 5%;
+		}
+
+		#details {
+			width: 54%;
+		}
+
+		#poster {
+			width: 85%;
+		}
+	}
+/* ******************************************
+	Media Queries for screen wider than 60em (960px)
+****************************************** */
+
+	@media (min-width: 60em) {
+		body {
+			background: url('rembrant-search-mediumsize.png');
+		}
+		#list {
+			width: 29%;
+		}
+
+		#details {
+			width: padding: 60%;
+		}
+		#poster {
+			width: 90%;
+		}
+	}

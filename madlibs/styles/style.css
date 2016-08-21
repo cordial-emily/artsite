@@ -1,0 +1,303 @@
+/* main.css */
+body {
+    background: url(../images/ml-graphic.png) no-repeat right fixed;
+    background-color: #EBA776;
+    font-family: Circular, Helvetica, Arial, sans-serif;
+}
+/* header */
+header {
+    background-color: #D88080;
+     margin-bottom: 20px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-brand img {
+    margin-top: -20px;
+}
+.navbar-default .navbar-nav>li>a {
+    letter-spacing: 2;
+    font-weight: 700;
+}
+.dropdown-menu {
+    background-color: rgba(235, 167, 118, 0.24);
+}
+.dropdown-menu>li>a {
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+li.dropdown-header {
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1em;
+}
+ul.spec {
+    padding: 10px 0px !important;
+}
+.dropdown-menu .divider {
+    background-color: #F2C677;
+}
+
+/* madlibs container */
+.jumbotron {
+  background: rgba(235,167,118,1);
+  background: -moz-linear-gradient(top, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(235,167,118,1)), color-stop(62%, rgba(250,232,198,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eba776', endColorstr='#ffffff', GradientType=0 );
+}
+.jumbotron.madl-container {
+    min-height: 50%;
+    float: left;
+    padding-bottom: 20px;
+}
+.container.madl-container {
+    margin-left: 0%;
+    padding-top: 80px;
+    max-width: 1200px;
+    /*max-width: 600px;*/
+    padding-bottom: 20px;
+}
+ul.spec {
+    list-style-type: none;
+    padding: 60px 0px;
+}
+ul.spec li {
+    padding-top: 10px;
+}
+div.anim h1 {
+    font-size: 3em;
+    font-family: 'Mountains of Christmas', cursive;
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+input#noun, input#adjective, input#name {
+    padding-left: 10px;
+    border-radius: 5px;
+    color: #7D7D7D;
+}
+button#lib-button {
+    width: 100%;
+    margin-left: 0%;
+    background-color: #efb73e;
+    border-radius: 6px;
+    border-width: 0px;
+    color: #fff;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 1.5em;
+    transition: background-color 0.5s ease;
+}
+button#lib-button:hover {
+    background-color: #CE5E5D;
+}
+
+div#story {
+    float: left;
+    min-height: 820px;
+    /*border: 1px solid #333;*/
+    border-radius: 6px;
+    background: rgba(235,167,118,1);
+    background: -moz-linear-gradient(top, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(235,167,118,1)), color-stop(62%, rgba(250,232,198,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(235,167,118,1) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(235,167,118,.9) 0%, rgba(250,232,198,1) 62%, rgba(255,255,255,.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eba776', endColorstr='#ffffff', GradientType=0 );
+
+}
+
+#story div {
+    font-family: inherit;
+    color: #333;
+    font-size: 3em;
+    margin: 2em .7em 0 .8em;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+#story h2 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 4em;
+    text-align: center;
+    padding: 2.5em;
+}
+.container #story div::first-letter {
+    font-size: 4.5em;
+    font-family: 'Mountains of Christmas', cursive;
+}
+/** about page **/
+.jumbotron.about-container {
+    min-height: 100%;
+    min-width: 100%;
+    float: left;
+    margin-top: 80px;
+}
+.about-container p {
+    margin-top: 5%;
+    text-align: center;
+}
+/********** animation css ***************/
+
+div.anim {
+  width: 200px;
+  height: 200px;
+  background-color: #EBA776;
+  /*animation: square-to-circle 3s 1s infinite alternate;*/
+  animation: square-to-circle 3s 1s infinite ease-in-out;
+  outline: 1px solid transparent;
+  background-position: 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:#EBA776;
+    /*transform:rotate(0deg);*/
+    transform:rotate(-30deg);
+  }
+  50%  {
+    border-radius:50%;
+    background:#ae3910;
+    /*transform:rotate(45deg);*/
+    transform:rotate(30deg);
+  }
+  /*50%  {
+    border-radius:50% 50% 0 0;
+    background:#ae3910;
+    transform:rotate(90deg);
+    transform:rotate(0deg);
+  }
+  75%  {
+    border-radius:50% 50% 50% 0;
+    background:lightcoral;
+    /*transform:rotate(135deg);
+    transform:rotate(50deg);
+  }*/
+  20%, 80% { transform: scale(.75)}
+  100% {
+    border-radius:0 0 0 0;
+    /*background:darksalmon;*/
+    background:darksalmon;
+    /*transform:rotate(180deg);*/
+    transform: rotate(-30deg);
+  }
+  /*from { background-position: 0 0; }
+  to { background-position: 100% 0; }*/
+}
+/* animate db */
+@keyframes slideUpSmall {
+  from {transform: translateY(0px);}
+  to {transform: translateY(-20px);}
+}
+.bowie-leg {
+  animation: slideUpSmall 0.25s 0.75s infinite forwards,
+             fadeIn 0.25s 0.75s forwards;
+}
+@keyframes darken {
+  0%,100% {fill: #000000;}
+  50% {fill: #F3C87B;}
+}
+
+@keyframes getGiant {
+  0% {transform: rotate(0deg);
+      fill: #000000;}
+  30% {fill: #F3C87B;}
+  /* 20% {transform: rotate(0deg);}
+  30% {transform: rotate(-90deg);}
+  40% {transform: rotate(0deg);}
+  45% {opacity: 1;}*/
+  90% {
+    transform: rotate(900deg) scale(5);
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+    transform: scale(1);
+  }
+}
+.bowie-swirl {
+  transition: transform 2s;
+  transform-origin: 260px 100px;
+  animation: darken 3s infinite;
+  animation: getGiant 5s infinite ease-in;
+
+}
+svg:not(:root) {
+    overflow: visible;
+}
+
+/* bootstrap workaround */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
+
+/* ******************************************
+			Media Queries for screen less than 45em (720px)
+****************************************** */
+	@media screen and (max-width: 45em) {
+    .jumbotron.madl-container {
+      width: 100% !important;
+      margin-top: 50px;
+    }
+    div#story {
+      width: 100%;
+      margin: 20px 0;
+    }
+    ul.spec.ial {
+      padding: 30px 0 50px 0 !important;
+    }
+    input#noun, input#adjective, input#name {
+      width: 100%;
+    }
+
+	}
+/* ******************************************
+	Media Queries for screen wider than 45em (720px)
+****************************************** */
+
+	@media screen and (min-width: 45em) {
+    .jumbotron.madl-container {
+      width: 45%;
+      margin-top: 50px;
+    }
+    div#story {
+      width: 45%;
+      margin: 50px 20px;
+    }
+    ul.spec.ial {
+      padding: 0px 0 0px 0 !important;
+    }
+    input#noun, input#adjective, input#name {
+      width: 100%;
+    }
+	}
+/* ******************************************
+	Media Queries for screen wider than 60em (960px)
+****************************************** */
+
+	@media (min-width: 60em) {
+    .jumbotron.madl-container {
+      width: 48%;
+      margin-top: 100px;
+    }
+    div#story {
+      width: 44%;
+      margin: 50px 20px 20px;
+    }
+    ul.spec.ial {
+      padding: 30px 0 50px 0 !important;
+    }
+
+	}

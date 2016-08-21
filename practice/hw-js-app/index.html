@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="art.css">
+	<link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<title>Art</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<script type="text/x-tmpl-mustache" id="list_template">
+		<ul>
+			{{#artObjects}}
+			<li><a class="itemm" id="{{id}}" href="#">{{title}}</a></li>
+			{{/artObjects}}
+		</ul>
+	</script>
+	<script type="text/x-tmpl-mustache" id="details_template">
+	{{#artObjects}}
+	<h2 id="elem" style="margin-left: .4em;"> {{title}} </h2>
+	<img id="poster" src="{{webImage.url}}">
+	<h3><h5>Artist:</h5> {{principalOrFirstMaker}}</h3>
+	<p><h5>Long Title:</h5> {{longTitle}}</p>
+	<p><h5>Number:</h5> {{objectNumber}} </p>
+	{{/artObjects}}
+	</script>
+
+</head>
+<body>
+
+	<div id="search">
+
+		<label>Art search:</label> <input id="search_text" type="text" placeholder="ex. 'Rembrant'">
+		<button id="search_button">Search</button>
+	    <p class="byline">From the database of the <a style="color:#B3B4AE;" href="https://www.rijksmuseum.nl/">Rijksmuseum</a> in Netherlands</p>
+	</div>
+	<div id="list" class="listt"></div>
+	<div id="details" class="detailss"></div>
+	<!--<table id="example3-container" class="example3-container target table-striped"><tbody>
+		<tr class="child">
+		</tr>
+	</tbody></table> -->
+
+	<script type="text/javascript" src="mustache.js"></script>
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="jquery-scrollto.js"></script>
+	<script type="text/javascript" src="art.js"></script>
+	<script>
+	  $("#search_text").keypress(function(event) {
+	    if (event.which == 13) {
+			  event.preventDefault();
+			  $("search_button").submit();
+	    }
+    });
+	</script>
+</body>
+</html>

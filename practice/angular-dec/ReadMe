@@ -1,0 +1,321 @@
+While working through an angularjs codeschool course, I'm building a 'gem store app'.
+
+This my 'first build' using Angular's version of Controllers, Modules, Expressions, Directives, and file structure.
+
+/********* Learning in progress.********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Angular.js (Course notes: Shaping Up With Angular)
+
+// Modules:
+// Where we write pieces of our Angular application.
+// Makes our code more maintainable, testable, and readable
+// Where we define dependencies for our app.
+
+// Expressions
+// Allow you to insert dynamic values into your HTML
+
+// Numerical Operation
+<p>I am {{4 + 6}}</p>
+
+// evaluates to
+<p>I am 10</p>
+
+// String Operations
+<p>{{“hello” + “ you”}}</p>
+
+// evaluates to
+<p>hello you</p>
+
+
+// Controllers: where we define our app’s behavior by defining functions and values. (Wrapping the Javascript in a closure is a good habit.)
+
+(function() {
+  var app = angular.module(’store’, [ ]);
+
+  app.controller(‘StoreController’, function() {
+    this.product=gem;
+  });
+
+  var gem = {
+    name: ‘Dodecahedron’,
+    price: 2.95,
+    description: ‘. . . ‘,
+  }
+
+})();
+
+
+
+///  If the product is sold out: ng-hide
+
+<div ng-controller="StoreController as store">
+  <div ng-hide="store.product.soldOut">
+    <h1>{{store.product.name}}</h1>
+    <h2>${{store.product.price}}</h2>
+    <p>{{store.product.description}}</p>
+    <button ng-show="store.product.canPurchase">Add to Cart</button>
+  </div>
+</div>
+
+// app.js ( update the controller ‘soldOut’ )
+
+  var gem = {
+    name: 'Dodecahedron',
+    price: 2.95,
+    description: 'Some gems have hidden qualities beyond their luster, beyond their shine... Dodecahedron is one of those gems. ',
+    canPurchase: true,
+    soldOut: true
+  }
+
+// Above HTML lists one product by its array index
+// But instead build a directive (ng-repeat) to iterate through the Array
+
+<div ng-controller="StoreController as store">
+  <div ng-repeat="product in store.products">
+    <h1>{{product.name}}</h1>
+    <h2>${{product.price}}</h2>
+    <p>{{product.description}}</p>
+    <button ng-show="product.canPurchase">Add to Cart</button>
+  </div>
+</div>
+
+
+
+// DIRECTIVES
+// ng-app - attach the Application Module to the page
+<html ng-app=“store”>
+
+// ng-controller - attach a Controller function to the page
+<body ng-controller=“StoreController as store”>
+
+// ng-show / ng-hide - display a section based on an Expression
+<h1 ng-show=“name”> Hello, {{name}}! </h1>
+<div class="gallery" ng-show="product.images.length"> // only displayed if a product has images
+
+// ng-repeat - repeat a section for each item
+<li ng-repeat=“product in store.products”> {{product.name}} </li>
+<div  ng-repeat="x in img">
+     <img ng-src="{{x.source}}" >
+ </div>`
+<li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+  <img ng-src="{{image}}" />
+</li>
+
+// ng-click (makes 2 way Data Binding)
+// this means Expressions are re-evaluated when a property changes
+<li> <a href ng-click=“tab = 1”>Info</a></li>
+<li> <a href ng-click=“tab = 2”>Info</a></li>
+<li> <a href ng-click=“tab = 3”>Info</a></li>
+{{ tab }}
+
+// ng-class — change the class of a div with an expression
+<li ng-class=“{ active:tab === 1 }”>
+
+
+// FILTER
+
+<div class="container" ng-controller="StoreController as store">
+  <div class="product row" ng-repeat="product in store.products">
+    <h1>{{product.name}}</h1>
+    <h2>${{product.price | currency}}</h2>
+    <p>{{product.description}}</p>
+    <button ng-show="product.canPurchase">Add to Cart</button>
+  </div>
+</div>
+
+
+// The | (pipe) before ‘currency’ means take the output from the first
+//expression and send it into the second expression.
+// OR, | is “send the output to”
+
+
+// Time and Date FILTER
+// take {{ data | filter:options}}
+
+{{’1388123412323’ | date:”MM/dd/yyyy @ h:mma’}}  // 12/27/2013@12:50AM
+
+// uppercase & lowercase
+{{ ‘octagon gem’ | uppercase }} // OCTAGON GEM
+
+// limitTo
+{{ ‘My Description’ | limitTo:8 }} // My Descr
+<li ng-repeat=“product in store.products | limitTo:3”>
+// (displays 1st 3 products)
+
+// orderBy
+<li ng-repeat=“product in store.products | orderBy:’-price’”>
+// Will list products by descending price.
+// Omit ‘-‘ by price to list in ascending order
+
+// ADDING AN IMAGE ARRAY TO OUR PRODUCT ARRAY
+
+var gems = [
+    {
+      name: "Dodecahedron",
+      price: 2.95,
+      description: "Some gems have hidden qualities beyond their luster, beyond their shine... Dodecahedron is one of those gems. ",
+      canPurchase: true,
+      images: [
+        {
+          full: "images/dodecahedron-01-full.jpg",
+          thumb: "images/dodecahedron-01-thumb.jpg"
+        },
+        {
+
+        }
+
+      ]
+    }
+  ];
+
+// To display the first image in a product us ng-source directive
+<img ng-src="{{ product.images[0].full }}"/>
+
+
+
+/////////////////////////////////////////////////////
+
+  app.controller('GalleryController', function(){
+    this.current = 0;
+    this.setCurrent = function(newGallery){
+      this.current = newGallery || 0;
+    };
+  });
+
+// Now that we've got a GalleryController, let's wire
+// it up to the page:
+
+      <div class='gallery' ng-controller="GalleryController as gallery" ng-show="product.images.length">
+        <img ng-src="{{product.images[gallery.current]}}" />
+        <ul class="list-inline thumbs">
+          <li class="thumbnail" ng-repeat="image in product.images">
+            <img ng-src="{{image}}" />
+          </li>
+        </ul>
+      </div>
+
+
+// using ng-include to make html snippet
+// ng-include expects a variable with the name of the file to include.
+// To pass the name directly as a string, use single quotes (‘…’)
+<div ng-repeat="product in store.products">
+  <h3 ng-include="'product-title.html'"> </h3>
+</div>
+
+// however Custom Directive will do the same
+// They allow you to write HMTL that expresses the behavior of your app.
+
+// TEMPLATE EXPANDING DIRECTIVES:
+//   define a custom tag or attribute that is expanded or replaced
+//   can include Controller logic if needed
+
+// CAN ALSO
+//   express complex UI
+//   calling events and registering event handlers
+//   reusing common components
+
+// Building a custom directive for <product-title></product-title>
+app.directive('productTitle', function(){
+  return {
+    restrict: 'E', /* E stands for Element, A for Attribute */
+    templateUrl: 'product-title.html'
+  };
+});
+
+// Element directive
+<product-title></product-title> // (doesn't work locally)
+
+// Attribute directive
+or <h2 product-title> </h2> // (best for UI widgets and mixin behaviors)
+
+
+// Build the controller MORE:
+// html element
+<product-panels ng-controller=“PanelController as panels”>
+…
+</product-panels>
+
+// MORE functionality inside the directive:
+app.directive(‘productPanels’, function() {
+  return {
+    restrict: ‘E’,
+    templateUrl: ‘product-panels.html’,
+    controller: function() {  // move panels controller inside directive
+
+    },
+    controllerAs: ‘panels’ // specify alias
+  };
+});
+
+// To get organized, divide up directives into their own modules in .js files
+
+// 1st, define a new module in products.js
+(function () {
+  var app = angular.module(‘store-products’, [’store-products’]);
+  app.directive(‘productTitle’, function(){…});
+  app.directive(‘productGallery’, function(){…});
+  app.directive(‘productPanels’, function(){…});
+})();
+
+
+// $http Service:  (how we make async request to a server)
+
+// …by using $http as a function with an options object
+$http({ method: ‘GET’, url: ‘/products.json’ });
+
+// …or by using one of the shortcut methods:
+$http.get(‘/products.json’, { apiKey: ‘myApiKey’ });
+
+// Both return a Promise object with .success() and .error()
+// (If we tell $http to fetch JSON, the result will be automatically decoded into JavaScript objects and arrays.)
+
+// How does a controller use a service like $http? DEPENDENCY INJECTION
+app.controller(’SomeController’, [ ‘$http’, function($http){
+}]);
+
+// More than one service:
+app.controller(’SomeController’, [ ‘$http’, ‘$log’, function($http, $log){
+}]);
+
+///////// Example
+(function() {
+  var app = angular.module(’store’, [ ’store-products’ ]);
+
+  app.controller(’SomeController’, [ ‘$http’, function($http){
+    var store = this;
+
+    store.products = [];
+
+    $http.get(‘/products.json’).success(function(data) {
+      store.products = data;
+    });
+
+  }]);
+})();
+
+// $http can post(), put(), and delete()
+
+$http.post(‘/path/to/resource.json’, { param: ‘value’ });
+
+$http.delete(‘/path/to/resource.json’);
+
+// …or any other http method by using a config object.
+
+$http({ method: ‘OPTIONS’, url: ‘path/to/resource.json’ });
+
+$http({ method: ‘TRACE’, url: ‘path/to/resource.json’ });
+
+$http({ method: ‘PATCH’, url: ‘path/to/resource.json’ });
