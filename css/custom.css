@@ -243,9 +243,9 @@ body .banner article svg{
 	float: left;
 	width: 140px;
 	height: 140px;
-	border-radius: 10px;
+	/*border-radius: 10px;
 	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	-webkit-border-radius: 10px;*/
 	line-height: 90px;
 	text-align: center;
     border: none;
