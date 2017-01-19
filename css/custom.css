@@ -228,6 +228,10 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
 .bea_border .row .col-md-12 h4 ul {
     /*z-index:6;*/
 }
+.artsubheading {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
 
 /*---div with D3 year/time animation-----*/
 body .banner article svg{
