@@ -234,6 +234,24 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
   font-family: 'Lato', sans-serif;
   padding-left: 2px;
 }
+/* cv web portfolio section */
+button.btn.btn-primary.web {
+    padding: 2px 2px;
+}
+button span.webtitle.first{
+  margin-left: -130px;
+}
+button span.webtitle {
+    position: absolute;
+    margin-top: 40px;
+    color: #d6d4d4;
+    background: #000;
+    width: 130px;
+}
+button.btn.btn-primary.web:hover {
+    border-color: #000;
+    background: #000;
+}
 
 /*---div with D3 year/time animation-----*/
 body .banner article svg{
@@ -269,6 +287,7 @@ body .banner article svg{
 			Media Queries for screen less than  (600px)
 ****************************************** */
 @media screen and (max-width: 600px) {
+  button.btn.btn-primary.web { margin-bottom: 25px; }
     .banner .container {
         min-height: 260px;
     }
@@ -295,6 +314,7 @@ body .banner article svg{
 /********big screen**********/
 
 @media screen and (min-width: 601px) {
+    .top-buffer { margin-top:25px; }
     .banner .container {
         min-height: 600px;
     }
