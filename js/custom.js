@@ -21,24 +21,30 @@ var reply_click = function()
     function testOutIds () {
       console.log("reading function" + newid);
       // add repeat code when Type error is resolved
-    }
-
-
-    if (newid == "b1") {
-      //return testOutIds();
-      //console.log(oldtitle);
-      //console.log(x[0]);
       console.log("Welcome to my site. If you have questions, you can email me at cordial.emily@gmail.com")
       var oldtitle = document.getElementById(newid).getElementsByClassName("webtitle")[0].innerHTML;
       var x = document.getElementById("plansModalLabel").innerHTML = oldtitle;
       var olddescr = document.getElementById(newid).getElementsByClassName("site-description")[0].innerHTML;
       var newdescr = document.getElementById("modalBody").innerHTML = olddescr;
     }
+
+
+    if (newid == "b1") {
+      testOutIds();
+      //console.log(oldtitle);
+      //console.log(x[0]);
+      // console.log("Welcome to my site. If you have questions, you can email me at cordial.emily@gmail.com")
+      // var oldtitle = document.getElementById(newid).getElementsByClassName("webtitle")[0].innerHTML;
+      // var x = document.getElementById("plansModalLabel").innerHTML = oldtitle;
+      // var olddescr = document.getElementById(newid).getElementsByClassName("site-description")[0].innerHTML;
+      // var newdescr = document.getElementById("modalBody").innerHTML = olddescr;
+    }
     if (newid == "b2") {
-      var oldtitle = document.getElementById(newid).getElementsByClassName("webtitle")[0].innerHTML;
-      var x = document.getElementById("plansModalLabel").innerHTML = oldtitle;
-      var olddescr = document.getElementById(newid).getElementsByClassName("site-description")[0].innerHTML;
-      var newdescr = document.getElementById("modalBody").innerHTML = olddescr;
+      testOutIds();
+      // var oldtitle = document.getElementById(newid).getElementsByClassName("webtitle")[0].innerHTML;
+      // var x = document.getElementById("plansModalLabel").innerHTML = oldtitle;
+      // var olddescr = document.getElementById(newid).getElementsByClassName("site-description")[0].innerHTML;
+      // var newdescr = document.getElementById("modalBody").innerHTML = olddescr;
     }
     if (newid == "b3") {
       var oldtitle = document.getElementById(newid).getElementsByClassName("webtitle")[0].innerHTML;

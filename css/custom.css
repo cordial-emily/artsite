@@ -252,6 +252,10 @@ button.btn.btn-primary.web:hover {
     border-color: #000;
     background: #000;
 }
+img.port {
+    border: 5px solid #565555;
+    border-radius: 10px;
+}
 
 /*---div with D3 year/time animation-----*/
 body .banner article svg{
