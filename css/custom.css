@@ -255,6 +255,14 @@ button.btn.btn-primary.web:hover {
 img.port {
     border: 5px solid #565555;
     border-radius: 10px;
+    float: left;
+}
+img.port.pfull {
+    width: 50%;
+}
+img.port.pmobile {
+    width: 20%;
+    margin: auto 3%;
 }
 
 /*---div with D3 year/time animation-----*/
