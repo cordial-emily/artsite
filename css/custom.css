@@ -261,8 +261,11 @@ img.port.pfull {
     width: 50%;
 }
 img.port.pmobile {
-    width: 18.8%;
+    width: 16.8%;
     margin: auto 3%;
+}
+.temp-top {
+    margin-top: 200px;
 }
 
 

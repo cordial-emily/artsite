@@ -19,7 +19,7 @@ var reply_click = function()
     var newid = this.id;
 
     function testOutIds () {
-      
+
       // add repeat code when Type error is resolved
       var oldtitle = document.getElementById(newid).getElementsByClassName("webtitle")[0].innerHTML;
       var x = document.getElementById("plansModalLabel").innerHTML = oldtitle;
@@ -33,8 +33,8 @@ var reply_click = function()
       document.getElementById("learnmore").innerHTML = combobtn;
     }
 
-
-    if (newid == "b1") {
+    testOutIds();
+    /*if (newid == "b1") {
       testOutIds();
     }
     if (newid == "b2") {
@@ -42,7 +42,7 @@ var reply_click = function()
     }
     if (newid == "b3") {
       testOutIds();
-    }
+    }*/
 
 }
 /*document.getElementById('b1').onclick = reply_click;
