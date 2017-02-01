@@ -13,6 +13,7 @@ jQuery(".thumbnail_").mouseover(mouseOverEffect).mouseout(mouseOutEffect);
 
 
 /* On CV page, modal pop-ups for Web portfolio ************************/
+
 var reply_click = function()
 {
     //alert(this.id+" "); //+ this.innerHTML
@@ -34,22 +35,10 @@ var reply_click = function()
     }
 
     testOutIds();
-    /*if (newid == "b1") {
-      testOutIds();
-    }
-    if (newid == "b2") {
-      testOutIds();
-    }
-    if (newid == "b3") {
-      testOutIds();
-    }*/
 
 }
-/*document.getElementById('b1').onclick = reply_click;
-document.getElementById('b2').onclick = reply_click;
-document.getElementById('b3').onclick = reply_click;*/
 
-/*document.getElementsByClassName('web')[1].onclick = reply_click;*/
+/* Cycle through each class clicked and run the function 'reply_click' */
 var elems = document.getElementsByClassName("web");
 for(var i = 0; i<elems.length; i++ ){
   elems[i].onclick = reply_click;

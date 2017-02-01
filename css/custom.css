@@ -264,6 +264,20 @@ img.port.pmobile {
     width: 16.8%;
     margin: auto 3%;
 }
+h4.modal-title {
+    text-align: center;
+}
+div#learnmore {
+    float: right;
+    margin-left: 2%;
+}
+
+
+
+
+
+
+
 .temp-top {
     margin-top: 200px;
 }
