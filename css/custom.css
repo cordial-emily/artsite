@@ -236,17 +236,26 @@ nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
 }
 /* cv web portfolio section */
 button.btn.btn-primary.web {
-    padding: 2px 2px;
+    padding: 0px 0px;
+    color: #fff;
+    background-color: #428bca;
+    border: 3px solid #ded5c5;
+    border-radius: 0px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 1px 0px;
 }
 button span.webtitle.first{
   margin-left: -130px;
 }
 button span.webtitle {
-    position: absolute;
-    margin-top: 40px;
-    color: #d6d4d4;
-    background: #000;
-    width: 130px;
+  position: absolute;
+  bottom: 3px;
+  color: #333;
+  background: rgba(223, 214, 198, .9);
+  width: 130px;
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
 }
 button.btn.btn-primary.web:hover {
     border-color: #000;
@@ -271,7 +280,9 @@ div#learnmore {
     float: right;
     margin-left: 2%;
 }
-
+div#modalBody {
+    min-height: 200px;
+}
 
 
 
