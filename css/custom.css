@@ -189,6 +189,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .emailing {
     width: 50em;
 }
+/*--- cv education section ------------*/
+p.majors {
+ font-family: 'Josefin Sans', sans-serif; font-weight:400;line-height:140%;font-size:140%;
+}
 /*-----cv styles------------------*/
 .gradient_container .middle #cv .d3readjust {
     /*margin-top: -470px;*/
