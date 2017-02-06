@@ -8,12 +8,9 @@ h1, h2, h3, h4, h5{
 p {
     font-family: 'Lato', sans-serif;
 }
-
 body {
 }
-.top {
-    background-color: #ffffff;
-}
+.top { background-color: #ffffff; }
 .top .navbar-brand {
     height: 50px;
     line-height: 50px;
@@ -28,12 +25,11 @@ body {
     background-color: #ded5c5;
     padding: 0 10px;
 }
-.top .container {
-    padding: 0;
-}
+.top .container { padding: 0; }
 .banner {
     background-color: #ded5c5;
 }
+.banner.cvv { border-bottom: 1px solid #333; }
 .banner .container {
     background-color: #ded5c5;
     padding: 40px 30px 30px 40px;
@@ -216,6 +212,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     line-height:150%;
     font-size:110%;
 }
+h4.cvmenu {
+    margin-bottom: 0px;
+}
+h4.cvmenu .nav-tabs>li>a:hover {
+  border-color: #333 #333 #ddd;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-bottom-color: transparent;
+    cursor: all-scroll;
+}
 nav nav-tabs ul li a {
     text-decoration: none;
 }
@@ -283,12 +292,18 @@ div#learnmore {
 div#modalBody {
     min-height: 200px;
 }
-
-
-
-
-
-
+p.portls {
+    margin-left: 53%;
+}
+button.btn.btn-primary {
+    background-color: #736c6c;
+    border: 1px solid #736c6c;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
 .temp-top {
     margin-top: 200px;
 }
@@ -318,9 +333,16 @@ div#modalBody {
 ****************************************** */
 @media screen and (max-width: 600px) {
   button.btn.btn-primary.web { margin-bottom: 25px; }
-    .banner .container {
-        min-height: 260px;
-    }
+  .container.bea_border.cv {
+    min-height: 500px;
+    padding-bottom: 0px;
+  }
+  h4.cvmenu ul li a {
+    font-size: 16px;
+  }
+  .banner .container {
+    min-height: 260px;
+  }
 	.subcontainer {
 		background-image: url('../images/icons/emily_schleiner.4.6.jpg');
         background-position:top center;
@@ -345,6 +367,10 @@ div#modalBody {
 
 @media screen and (min-width: 601px) {
     .top-buffer { margin-top:25px; }
+    .container.bea_border.cv {
+      min-height: 500px;
+      padding-bottom: 0px;
+    }
     .banner .container {
         min-height: 600px;
     }
