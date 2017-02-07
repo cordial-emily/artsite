@@ -190,6 +190,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     width: 50em;
 }
 /*--- cv education section ------------*/
+h1.cvttle { border-bottom-style: solid; border-width: 5px; padding-bottom: 15px; }
 p.majors {
  font-family: 'Josefin Sans', sans-serif; font-weight:400;line-height:140%;font-size:140%;
 }
@@ -434,4 +435,33 @@ button.btn.btn-primary:hover {
   button span.webtitle {
       bottom: 48px;
   }
+}
+/* All your print styles go here */
+@media print {
+  header.top, h4.cvmenu, .bottom, .printh {
+      display: none;
+      height: 0px;
+  }
+  .banner.cvv {
+    border-bottom: 0px;
+    height: 450px;
+  }
+  .adjust { font-size: 80%; }
+  .col-sm-2.webp { width: 38%;float: left; border:0px; }
+  .col-md-2 { width: 16.66666667%; float: left; }
+  .col-md-1 { width: 8.33333333%; float: left; }
+  .col-md-4 { width: 33.33333333%; float: left; }
+  .col-md-8 { width: 66.66666667%; float: left; }
+  button span.webtitle.first { margin-left: 0px !important; }
+  button#b1 .site-description .learnbtnlink { display: block; }
+  button span.webtitle { bottom: inherit; display: block; height: 80px; }
+  .web img.detail, h1.cvttle { display: none; }
+  .learnbtnlink { display: block; position: absolute; height: 30px; top: 60px; }
+  #web .col-sm-2.webp { margin-bottom: 5%; }
+  .pspace { margin-top: -40px; }
+  .banner h1, .gradient_container h2 { font-size: 150%; }
+  #b1 span.webtitle.first::after {
+    content: " http://historicknoxvilleproperties.com/";
+  }
+  button.btn.btn-primary.web { border: none; }
 }
