@@ -264,16 +264,22 @@ button span.webtitle {
   position: absolute;
   /*bottom: 60px;*/
   color: #333;
-  background: rgba(178, 177, 165, 0.9);
+  /*background: rgba(178, 177, 165, 0.9);*/
   width: 130px;
   height: 65px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
+.spacer {
+    transition: all .5s ease;
+}
 button.btn.btn-primary.web:hover {
-    border-color: #000;
+    border: 3px solid #000;
     background: #000;
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);
 }
 img.port {
     border: 5px solid #565555;
@@ -289,6 +295,17 @@ img.port.pmobile {
 }
 h4.modal-title {
     text-align: center;
+    font-weight: 400;
+}
+h4.modal-title:first-letter {
+    font-size: 140%;
+}
+.modal-content {
+    border: 3px solid #565555;
+    border-radius: 0px;
+}
+.modal-header, .modal-footer  {
+    background-color: #d1d4c6;
 }
 div#learnmore {
     float: right;
@@ -301,8 +318,8 @@ p.portls {
     margin-left: 53%;
 }
 button.btn.btn-primary {
-    background-color: #736c6c;
-    border: 1px solid #736c6c;
+    background-color: #878a80;
+    border: 1px solid #878a80;
 }
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: thin dotted;
@@ -316,14 +333,21 @@ button.btn.btn-primary {
     padding-left: 5% !important;
     padding-bottom: 5%;
 }
+button.btn.btn-primary:hover {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #333;
+}
+button.btn.btn-default:hover {
+    background-color: #a5a99e;
+    border: 1px solid #a5a99e;
+    color: #fff;
+}
 span.webtitle::first-letter {
-    color: #c04d4a;
     font-size: 150%;
 }
-
-button.btn.btn-primary:hover {
-    background: #ded5c5;
-    color: #333;
+.row.printh p, .row.printh h2 {
+    text-align: center;
 }
 
 /*------jquery rollover on art page-------------*/
@@ -343,10 +367,11 @@ button.btn.btn-primary:hover {
 
 /********big screen**********/
 
-@media screen and (max-width: 2000px) {
-  button span.webtitle {
-      bottom: 61px;
-  }
+@media screen and (max-width: 2500px) {
+    button span.webtitle {
+      bottom: 45%;
+      position: absolute;
+    }
     .top-buffer { margin-top:25px; }
     .container.bea_border.cv {
       min-height: 500px;
@@ -354,6 +379,10 @@ button.btn.btn-primary:hover {
     }
     .banner .container {
         min-height: 600px;
+    }
+    .container.cvmar {
+      padding-left: 5%;
+      padding-right: 5%;
     }
 	.subcontainer {
 		background-image: url('../images/icons/emily_schleiner.4.5.jpg');
@@ -367,7 +396,6 @@ button.btn.btn-primary:hover {
     body .banner article svg {
         top: -600px;
         position: relative;
-        /* z-index: 5; */
         opacity: 0.5;
         margin-left: 0%;
     }
@@ -375,22 +403,22 @@ button.btn.btn-primary:hover {
 
 @media screen and (max-width: 1200px) {
   button span.webtitle {
-      bottom: 51px;
+      bottom: 40%;
   }
 }
 @media screen and (max-width: 991px) {
   button span.webtitle {
-      bottom: 40px;
+      bottom: 37%;
   }
 }
 @media screen and (max-width: 780px) {
   button span.webtitle {
-      bottom: 38px;
+      bottom: 35%;
   }
 }
 @media screen and (max-width: 680px) {
   button span.webtitle {
-      bottom: 32px;
+      bottom: 34%;
   }
 }
 /* ******************************************
@@ -398,7 +426,7 @@ button.btn.btn-primary:hover {
 ****************************************** */
 @media screen and (max-width: 600px) {
   button span.webtitle {
-      bottom: 56px;
+      bottom: 40%;
   }
   button.btn.btn-primary.web { margin-bottom: 25px; }
   .container.bea_border.cv {
@@ -436,9 +464,9 @@ button.btn.btn-primary:hover {
       bottom: 48px;
   }
 }
-/* All your print styles go here */
+/* print styles *********************************/
 @media print {
-  header.top, h4.cvmenu, .bottom, .printh {
+  header.top, h4.cvmenu, .bottom {
       display: none;
       height: 0px;
   }
@@ -464,4 +492,7 @@ button.btn.btn-primary:hover {
     content: " http://historicknoxvilleproperties.com/";
   }
   button.btn.btn-primary.web { border: none; }
+  span.webtitle::first-letter {
+      color: #c04d4a;
+  }
 }
