@@ -253,7 +253,7 @@ button.btn.btn-primary.web {
     padding: 0px 0px;
     color: #fff;
     background-color: #428bca;
-    border: 3px solid #6f796b;
+    border: 3px solid #898e6f;
     border-radius: 0px;
     box-shadow: rgb(0, 0, 0) 0px 0px 1px 0px;
 }
@@ -271,16 +271,6 @@ button span.webtitle {
   font-weight: 400;
   font-size: 16px;
   text-shadow: 2px 2px 3px #fff, -3px 3px 5px #fff;
-}
-.spacer {
-    transition: all .5s ease;
-}
-button.btn.btn-primary.web:hover {
-    border: 3px solid #000;
-    background: #000;
-    -webkit-transform: rotateZ(-30deg);
-    -ms-transform: rotateZ(-30deg);
-    transform: rotateZ(-30deg);
 }
 img.port {
     border: 5px solid #565555;
@@ -349,6 +339,32 @@ span.webtitle::first-letter {
 }
 .row.printh p, .row.printh h2 {
     text-align: center;
+}
+/* hover animation for web portfolio buttons */
+@keyframes bounceIn {
+  0% {
+    transform: scale(1);
+    /*opacity: 0;*/
+  }
+  60% {
+    transform: scale(1.2);
+    /*opacity: 1;*/
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*.spacer {
+    transition: all .5s ease;
+}*/
+button.btn.btn-primary.web:hover {
+    animation-duration: 1s;
+    animation-name: bounceIn;
+    border: 3px solid #000;
+    background: #000;
+    /*-webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg);*
 }
 
 /*------jquery rollover on art page-------------*/
