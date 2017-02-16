@@ -264,12 +264,13 @@ button span.webtitle {
   position: absolute;
   /*bottom: 60px;*/
   color: #333;
-  /*background: rgba(178, 177, 165, 0.9);*/
+  background: rgba(255, 255, 255, 0.55);
   width: 130px;
   height: 65px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  text-shadow: 2px 2px 3px #fff, -3px 3px 5px #fff;
 }
 .spacer {
     transition: all .5s ease;
