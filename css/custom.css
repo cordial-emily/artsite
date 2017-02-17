@@ -362,9 +362,7 @@ button.btn.btn-primary.web:hover {
     animation-name: bounceIn;
     border: 3px solid #000;
     background: #000;
-    /*-webkit-transform: rotateZ(-30deg);
-    -ms-transform: rotateZ(-30deg);
-    transform: rotateZ(-30deg);*
+
 }
 
 /*------jquery rollover on art page-------------*/
@@ -386,8 +384,10 @@ button.btn.btn-primary.web:hover {
 
 @media screen and (max-width: 2500px) {
     button span.webtitle {
-      bottom: 45%;
-      position: absolute;
+      top: 2px;
+      height: 130px;
+      padding-top: 8%;
+      /*position: absolute;*/
     }
     .top-buffer { margin-top:25px; }
     .container.bea_border.cv {
@@ -420,22 +420,30 @@ button.btn.btn-primary.web:hover {
 
 @media screen and (max-width: 1200px) {
   button span.webtitle {
-      bottom: 40%;
+    top: 2px;
+    height: 130px;
+    padding-top: 8%;
   }
 }
 @media screen and (max-width: 991px) {
   button span.webtitle {
-      bottom: 37%;
+    top: 2px;
+    height: 130px;
+    padding-top: 8%;
   }
 }
 @media screen and (max-width: 780px) {
   button span.webtitle {
-      bottom: 35%;
+    top: 2px;
+    height: 130px;
+    padding-top: 6%;
   }
 }
 @media screen and (max-width: 680px) {
   button span.webtitle {
-      bottom: 34%;
+    top: 2px;
+    height: 130px;
+    padding-top: 8%;
   }
 }
 /* ******************************************
@@ -443,7 +451,9 @@ button.btn.btn-primary.web:hover {
 ****************************************** */
 @media screen and (max-width: 600px) {
   button span.webtitle {
-      bottom: 40%;
+    top: 2px;
+    height: 130px;
+    padding-top: 7%;
   }
   button.btn.btn-primary.web { margin-bottom: 25px; }
   .container.bea_border.cv {
@@ -477,19 +487,28 @@ button.btn.btn-primary.web:hover {
 		}
 }
 @media screen and (max-width: 480px) {
-  button span.webtitle {
+  /*button span.webtitle {
       bottom: 48px;
+  }*/
+  button span.webtitle {
+      top: 2px;
+      height: 130px;
+      padding-top: 8%;
   }
 }
 /* print styles *********************************/
 @media print {
+  body { margin-left: 5%; margin-right: 5%; }
   header.top, h4.cvmenu, .bottom {
       display: none;
       height: 0px;
   }
+  .nameheader { display: block; text-align: right;}
+  .nameheader p.namesub { font-weight: 400;font-size: 90%; }
   .banner.cvv {
     border-bottom: 0px;
     height: 450px;
+    margin-bottom: 40px;
   }
   .adjust { font-size: 80%; }
   .col-sm-2.webp { width: 38%;float: left; border:0px; }
