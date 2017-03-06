@@ -29,7 +29,15 @@ body {
 .banner {
     background-color: #ded5c5;
 }
-.banner.cvv { border-bottom: 1px solid #333; }
+.banner.cvv {
+  border-bottom: 1px solid #333;
+}
+.container.bea_border.cv {
+    background-image: url(../images/icons/emily_schleiner.2d.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 .banner .container {
     background-color: #ded5c5;
     padding: 40px 30px 30px 40px;
@@ -190,6 +198,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     width: 50em;
 }
 /*--- cv education section ------------*/
+.container.bea_border.cv .port-img { width: 80%;}
 h1.cvttle { border-bottom-style: solid; border-width: 5px; padding-bottom: 15px; }
 p.majors {
  font-family: 'Josefin Sans', sans-serif; font-weight:400;line-height:140%;font-size:140%;
@@ -219,9 +228,19 @@ p.majors {
 }
 h4.cvmenu {
     margin-bottom: 0px;
+    position:absolute;
+    bottom:0;
+    left:0;
 }
+h4.cvmenu ul li a {
+    background: #595959;
+}
+/*h4.cvmenu ul.nav.nav-tabs>li {
+    background: #595959;
+}/*
 h4.cvmenu .nav-tabs>li>a:hover {
   border-color: #333 #333 #ddd;
+  color: #000;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: #555;
@@ -233,8 +252,11 @@ h4.cvmenu .nav-tabs>li>a:hover {
 nav nav-tabs ul li a {
     text-decoration: none;
 }
-nav nav-tabs ul li, a:link, a:visited, a:hover a:active{
+/*nav nav-tabs ul li, a:hover {
     color:#756ba6;
+}*/
+nav nav-tabs ul li, a:link, a:visited, a:active{
+    color: #ded5c5;
 }
 .container .navbar-collapse {
     padding-left: 0px;
@@ -382,7 +404,7 @@ button.btn.btn-primary.web:hover {
 
 /********big screen**********/
 
-@media screen and (max-width: 2500px) {
+@media screen and (max-width: 3500px) {
     button span.webtitle {
       top: 2px;
       height: 130px;
@@ -393,6 +415,9 @@ button.btn.btn-primary.web:hover {
     .container.bea_border.cv {
       min-height: 500px;
       padding-bottom: 0px;
+    }
+    .col-md-12.cvm {
+      height: 600px;
     }
     .banner .container {
         min-height: 600px;
@@ -457,8 +482,17 @@ button.btn.btn-primary.web:hover {
   }
   button.btn.btn-primary.web { margin-bottom: 25px; }
   .container.bea_border.cv {
-    min-height: 500px;
+    min-height: 350px;
     padding-bottom: 0px;
+  }
+  .container.bea_border.cv {
+    background-image: url(../images/icons/emily_schleiner.2d.500.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .col-md-12.cvm {
+    height: 350px;
   }
   h4.cvmenu ul li a {
     font-size: 16px;
