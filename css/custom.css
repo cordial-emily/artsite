@@ -288,7 +288,6 @@ button span.webtitle.first{
 }
 button span.webtitle {
   position: absolute;
-  /*bottom: 60px;*/
   color: #333;
   background: rgba(255, 255, 255, 0.55);
   width: 130px;
@@ -462,6 +461,9 @@ button.btn.btn-primary.web:hover {
   }
 }
 @media screen and (max-width: 780px) {
+  .spacer {
+      padding-left: 10%;
+  }
   button span.webtitle {
     top: 2px;
     height: 130px;
@@ -469,6 +471,9 @@ button.btn.btn-primary.web:hover {
   }
 }
 @media screen and (max-width: 680px) {
+  .spacer {
+      padding-left: 10%;
+  }
   button span.webtitle {
     top: 2px;
     height: 130px;
@@ -484,6 +489,9 @@ button.btn.btn-primary.web:hover {
     height: 130px;
     padding-top: 7%;
   }
+  .spacer {
+      padding-left: 10%;
+  }
   button.btn.btn-primary.web { margin-bottom: 25px; }
   .container.bea_border.cv {
     min-height: 350px;
@@ -496,7 +504,7 @@ button.btn.btn-primary.web:hover {
     background-position: 50% 50%;
   }
   .col-md-12.cvm {
-    height: 350px;
+    height: 290px;
   }
   h4.cvmenu ul li a {
     font-size: 16px;
@@ -528,6 +536,9 @@ button.btn.btn-primary.web:hover {
   /*button span.webtitle {
       bottom: 48px;
   }*/
+  .spacer {
+      padding-left: 10%;
+  }
   button span.webtitle {
       top: 2px;
       height: 130px;
