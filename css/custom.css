@@ -123,6 +123,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .navbar-nav li a:hover {
     background-color: #ded5c5;
+    color: #000;
 }
 .bottom {
     /*background-color: #3f4032;*/
@@ -217,6 +218,7 @@ p.majors {
     letter-spacing:1px;
     line-height: 140%;
 }
+.container.cvmar .row .col-md-12 p.cv-summary { margin: 40px 60px 40px 40px; }
 .ital span {
     font-style:italic;
 }
@@ -234,7 +236,9 @@ h4.cvmenu {
 }
 h4.cvmenu ul li a {
     background: #595959;
+    color: #ded5c5;
 }
+h4.cvmenu ul li a:hover { color: #000; }
 /*h4.cvmenu ul.nav.nav-tabs>li {
     background: #595959;
 }/*
@@ -256,7 +260,7 @@ nav nav-tabs ul li a {
     color:#756ba6;
 }*/
 nav nav-tabs ul li, a:link, a:visited, a:active{
-    color: #ded5c5;
+    color: #776584;
 }
 .container .navbar-collapse {
     padding-left: 0px;
