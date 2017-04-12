@@ -279,9 +279,9 @@ button span.webtitle {
   z-index: 1;
   left:0px;
 }
-button span.webtitle:hover {
+/*button span.webtitle:hover {
     background: rgb(247, 247, 246);
-}
+}*/
 div.mag-ico {
     position: absolute;
     z-index: 1;
