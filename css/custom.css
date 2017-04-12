@@ -282,10 +282,12 @@ button.btn.btn-primary.web {
     border: 3px solid #898e6f;
     border-radius: 0px;
     box-shadow: rgb(0, 0, 0) 0px 0px 1px 0px;
+    overflow: hidden;
+    min-width: 130px;
+    min-height: 130px;
+    position: relative;
 }
-button span.webtitle.first{
-  margin-left: -130px;
-}
+button span.webtitle.first{}
 button span.webtitle {
   position: absolute;
   color: #333;
@@ -294,8 +296,32 @@ button span.webtitle {
   height: 65px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   text-shadow: 2px 2px 3px #fff, -3px 3px 5px #fff;
+  z-index: 1;
+  left:0px;
+}
+button span.webtitle:hover {
+    background: rgb(247, 247, 246);
+}
+div.mag-ico {
+    position: absolute;
+    z-index: 1;
+    left: 32%;
+    bottom: 20%;
+}
+div.mag-ico::after {
+  position: absolute;
+  color: #333;
+  z-index: 1;
+  left: 32%;
+  bottom: 10%;
+  display: block;
+  content: url('../images/icons/magnifying_glass.2.svg');
+}
+img.detail { position: absolute; z-index: 0; top: 0px; left: 0px;}
+img.detail:hover {
+    vertical-align: top;
 }
 img.port {
     border: 5px solid #565555;
@@ -409,7 +435,7 @@ button.btn.btn-primary.web:hover {
 
 @media screen and (max-width: 3500px) {
     button span.webtitle {
-      top: 2px;
+      top: 0px;
       height: 130px;
       padding-top: 8%;
       /*position: absolute;*/
@@ -448,14 +474,14 @@ button.btn.btn-primary.web:hover {
 
 @media screen and (max-width: 1200px) {
   button span.webtitle {
-    top: 2px;
+    top: 0px;
     height: 130px;
     padding-top: 8%;
   }
 }
 @media screen and (max-width: 991px) {
   button span.webtitle {
-    top: 2px;
+    top: 0px;
     height: 130px;
     padding-top: 8%;
   }
@@ -465,7 +491,7 @@ button.btn.btn-primary.web:hover {
       padding-left: 10%;
   }
   button span.webtitle {
-    top: 2px;
+    top: 0px;
     height: 130px;
     padding-top: 6%;
   }
@@ -475,7 +501,7 @@ button.btn.btn-primary.web:hover {
       padding-left: 10%;
   }
   button span.webtitle {
-    top: 2px;
+    top: 0px;
     height: 130px;
     padding-top: 8%;
   }
@@ -485,7 +511,7 @@ button.btn.btn-primary.web:hover {
 ****************************************** */
 @media screen and (max-width: 600px) {
   button span.webtitle {
-    top: 2px;
+    top: 0px;
     height: 130px;
     padding-top: 7%;
   }
@@ -540,7 +566,7 @@ button.btn.btn-primary.web:hover {
       padding-left: 10%;
   }
   button span.webtitle {
-      top: 2px;
+      top: 0px;
       height: 130px;
       padding-top: 8%;
   }
