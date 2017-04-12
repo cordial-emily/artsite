@@ -239,34 +239,12 @@ h4.cvmenu ul li a {
     color: #ded5c5;
 }
 h4.cvmenu ul li a:hover { color: #000; }
-/*h4.cvmenu ul.nav.nav-tabs>li {
-    background: #595959;
-}/*
-h4.cvmenu .nav-tabs>li>a:hover {
-  border-color: #333 #333 #ddd;
-  color: #000;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-    color: #555;
-    background-color: #fff;
-    border: 1px solid #333;
-    border-bottom-color: transparent;
-    cursor: all-scroll;
-}
-nav nav-tabs ul li a {
-    text-decoration: none;
-}
-/*nav nav-tabs ul li, a:hover {
-    color:#756ba6;
-}*/
+
 nav nav-tabs ul li, a:link, a:visited, a:active{
     color: #776584;
 }
 .container .navbar-collapse {
     padding-left: 0px;
-}
-.bea_border .row .col-md-12 h4 ul {
-    /*z-index:6;*/
 }
 .artsubheading {
   margin-bottom: 10px;
@@ -375,11 +353,6 @@ button.btn.btn-primary {
     padding-left: 5% !important;
     padding-bottom: 5%;
 }
-button.btn.btn-primary:hover {
-    background: #fff;
-    border: 1px solid #fff;
-    color: #333;
-}
 button.btn.btn-default:hover {
     background-color: #a5a99e;
     border: 1px solid #a5a99e;
@@ -392,6 +365,7 @@ span.webtitle::first-letter {
     text-align: center;
 }
 /* hover animation for web portfolio buttons */
+
 @keyframes bounceIn {
   0% {
     transform: scale(1);
@@ -408,11 +382,12 @@ span.webtitle::first-letter {
 /*.spacer {
     transition: all .5s ease;
 }*/
+button.btn.btn-primary.web { -webkit-transform-style: preserve-3d; }
 button.btn.btn-primary.web:hover {
     animation-duration: 1s;
     animation-name: bounceIn;
+    -webkit-transform-style: preserve-3d;
     border: 3px solid #000;
-    background: #000;
 
 }
 
