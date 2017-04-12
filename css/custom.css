@@ -1,6 +1,9 @@
-/*custom styles for emily schleiner's website*/
+/*custom styles for emily schleiner's website
+copyright 2017*/
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+/*---- global styles -------*/
 h1, h2, h3, h4, h5{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -10,6 +13,7 @@ p {
 }
 body {
 }
+/* ---------- navigation -----------*/
 .top { background-color: #ffffff; }
 .top .navbar-brand {
     height: 50px;
@@ -25,19 +29,12 @@ body {
     background-color: #ded5c5;
     padding: 0 10px;
 }
+/* -------- banner ----------- */
 .top .container { padding: 0; }
 .banner {
     background-color: #ded5c5;
 }
-.banner.cvv {
-  border-bottom: 1px solid #333;
-}
-.container.bea_border.cv {
-    background-image: url(../images/icons/emily_schleiner.2d.png);
-    max-width: 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
+
 .banner .container {
     background-color: #ded5c5;
     padding: 40px 30px 30px 40px;
@@ -48,6 +45,15 @@ body {
     font-size: 22px;
     padding-left: 5px;
     font-weight: 300;
+}
+.banner.cvv {
+  border-bottom: 1px solid #333;
+}
+.container.bea_border.cv {
+    background-image: url(../images/icons/emily_schleiner.2d.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .floating_title_art {
     margin-bottom: 2em;
@@ -126,11 +132,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     color: #000;
 }
 .bottom {
-    /*background-color: #3f4032;*/
 }
 .bottom .container {
     min-height: 150px;
-    /*background-image: url('../images/icons/pattern.3.png');*/
 }
 .bottom .container h4 {
     color: #000000;
@@ -156,9 +160,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     line-height: 30px;
     font-size: 16px;
 }
-.contact {
-    /*text-align: center;*/
-}
 .join {
     box-sizing: border-box;
     display: inline-block;
@@ -173,14 +174,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .send {
     display: inline-block;
-    /*max-width: 30em;*/
     font-size: 1em;
     line-height: 1;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
     background: #a39374;
-    /*margin: .65em .26em;*/
     padding: .975em;
     border: 0;
     border-radius: 1.3em;
@@ -252,7 +251,7 @@ nav nav-tabs ul li, a:link, a:visited, a:active{
   font-family: 'Lato', sans-serif;
   padding-left: 2px;
 }
-/* cv web portfolio section */
+/* --------- cv web portfolio section --------------- */
 button.btn.btn-primary.web {
     padding: 0px 0px;
     color: #fff;
@@ -279,9 +278,6 @@ button span.webtitle {
   z-index: 1;
   left:0px;
 }
-/*button span.webtitle:hover {
-    background: rgb(247, 247, 246);
-}*/
 div.mag-ico {
     position: absolute;
     z-index: 1;
@@ -349,7 +345,7 @@ button.btn.btn-primary {
 .temp-top {
     margin-top: 200px;
 }
-#web .col-sm-2.webp {
+#web .col-xs-2.webp {
     padding-left: 5% !important;
     padding-bottom: 5%;
 }
@@ -405,7 +401,7 @@ button.btn.btn-primary.web:hover {
 	-webkit-box-shadow: 0 0 10px #000000;
 }
 
-
+/*------------------- MEDIA QUERIES ----------------------*/
 /********big screen**********/
 
 @media screen and (max-width: 3500px) {
@@ -556,22 +552,35 @@ button.btn.btn-primary.web:hover {
   .nameheader { display: block; text-align: right;}
   .nameheader p.namesub { font-weight: 400;font-size: 90%; }
   .banner.cvv {
-    border-bottom: 0px;
-    height: 450px;
-    margin-bottom: 40px;
+    min-height: 100px!important;
+    height: 200px!important;
   }
-  .adjust { font-size: 80%; }
-  .col-sm-2.webp { width: 38%;float: left; border:0px; }
-  .col-md-2 { width: 16.66666667%; float: left; }
-  .col-md-1 { width: 8.33333333%; float: left; }
-  .col-md-4 { width: 33.33333333%; float: left; }
-  .col-md-8 { width: 66.66666667%; float: left; }
+  .container.bea_border.cv {
+    min-height: 200px!important;
+    height: 200px !important;
+  }
+  .container.bea_border.cv .row .cvm {
+    min-height: 200px!important;
+    height: 200px !important;
+  }
+  .adjust { font-size: 70%; }
+.col-xs-2.webp { /*width: 25%;float: left; border:0px;*/ margin-right: 3%;}
+  .col-md-2 { width: 14%; float: left; }
+  .col-md-1 { width: 7%; float: left; }
+  .col-md-4 { width: 30%; float: left; }
+  .col-md-8 { width: 62%; float: left; }
   button span.webtitle.first { margin-left: 0px !important; }
   button#b1 .site-description .learnbtnlink { display: block; }
-  button span.webtitle { bottom: inherit; display: block; height: 80px; }
-  .web img.detail, h1.cvttle { display: none; }
+  button span.webtitle { bottom: inherit; display: block; height: 40px; margin-top: 20px;}
+  button.btn.btn-primary.web { height: 40px; }
+  h1.cvttle { border: 0px; padding-bottom: 0px; }
+  .web img.detail, .mag-ico, .displaynone { display: none; }
   .learnbtnlink { display: block; position: absolute; height: 30px; top: 60px; }
-  #web .col-sm-2.webp { margin-bottom: 5%; }
+  /*#web .col-sm-2.webp { margin-bottom: 5%; }*/
+  #web .col-sm-2.webp {
+    padding-left: 0% !important;
+    padding-bottom: 2%;
+  }
   .pspace { margin-top: -40px; }
   .banner h1, .gradient_container h2 { font-size: 150%; }
   #b1 span.webtitle.first::after {
