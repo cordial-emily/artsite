@@ -528,11 +528,14 @@ button.btn.btn-primary.web:hover {
         opacity: 0.5;
         margin-left: -40%;
 		}
+    .col-xs-2 {
+        width: 40%;
+    }
 }
 @media screen and (max-width: 480px) {
-  /*button span.webtitle {
-      bottom: 48px;
-  }*/
+  .col-xs-2 {
+      width: 60%;
+  }
   .spacer {
       padding-left: 10%;
   }
