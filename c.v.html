@@ -914,34 +914,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery-1.9.1.min.js"></script>
 
-<script>
-jQuery('#plansModal').on('show.bs.modal', function (event) {
-  var button = jQuery(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
 
-
-  var modal = jQuery(this)
-  modal.find('.modal-title').text('This Plan includes: ')
-  //modal.find('.modal-body input').val(recipient)
-
-  // Split strint to list and make into array
-  var recipientlist = recipient.split(",");
-
-  function write_list(){
-    var listItems = "";
-
-    for (var i = 0; i < recipientlist.length; i++ ) {
-
-        listItems += "<li>"  + recipientlist[i] + "</li>";
-    }
-
-    document.getElementById("planlist").innerHTML = listItems;
-  }
-  //jQuery( "#planlist" ).append( "<p>" + recipientlist + "</p>" );
-  write_list();
-
-})
-</script>
 <script src="js/custom.js"></script>
 <script>
     jQuery.noConflict();
