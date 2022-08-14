@@ -197,6 +197,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .emailing {
     width: 50em;
 }
+/*-- Art page carousel --*/
+.container.landing-carousel .carousel-caption {
+    background: rgb(248 248 248 / 70%);
+}
+.container.landing-carousel .carousel-caption {
+    text-shadow: 0 0px 0px;
+}
+.container.landing-carousel .carousel-caption  h4, .container.landing-carousel .carousel-caption  p {
+    color: #220e0e;
+    text-align: left;
+    padding-left: 5%;
+    font-weight: 400;
+}
+.container.landing-carousel .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
 /*--- cv education section ------------*/
 .container.bea_border.cv .port-img { width: 80%;}
 h1.cvttle { border-bottom-style: solid; border-width: 5px; padding-bottom: 15px; }
