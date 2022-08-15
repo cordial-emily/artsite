@@ -216,6 +216,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     border-color: #6c757d;
 }
 
+/*-- Art detail page --*/
+figure.tarot-thumb-figure{
+
+}
+img.tarot-thumb {
+  height: 250px;
+  width:auto;
+}
+img.herosjourney-detail {
+  width: 100%;
+  height: auto;
+}
+
 /*--- cv education section ------------*/
 .container.bea_border.cv .port-img { width: 80%;}
 h1.cvttle { border-bottom-style: solid; border-width: 5px; padding-bottom: 15px; }
