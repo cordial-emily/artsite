@@ -215,6 +215,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     background-color: #6c757d;
     border-color: #6c757d;
 }
+.container.landing-carousel {
+    max-width: 100%;
+}
 
 /*-- Art detail page --*/
 figure.tarot-thumb-figure{
