@@ -95,6 +95,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 /*--About Page--*/
+h2.h2banner {
+  font-size: 16px;
+}
 .box_info {
     border-width: 1px;
     border-color: #cccccc;
