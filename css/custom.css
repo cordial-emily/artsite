@@ -29,6 +29,9 @@ body {
     background-color: #ded5c5;
     padding: 0 10px;
 }
+.navbar-nav li a.cord-nav {
+  text-transform: uppercase;
+}
 /* -------- banner ----------- */
 .top .container { padding: 0; }
 .banner {
@@ -443,6 +446,10 @@ button.btn.btn-primary.web:hover {
 /********big screen**********/
 
 @media screen and (max-width: 3500px) {
+    .navbar-nav>li {
+      min-width: 80px;
+      text-align: center;
+    }
     button span.webtitle {
       top: 0px;
       height: 130px;
@@ -482,6 +489,10 @@ button.btn.btn-primary.web:hover {
 }
 
 @media screen and (max-width: 1200px) {
+  .navbar-nav>li {
+    min-width: 80px;
+    text-align: center;
+  }
   button span.webtitle {
     top: 0px;
     height: 130px;
@@ -489,6 +500,10 @@ button.btn.btn-primary.web:hover {
   }
 }
 @media screen and (max-width: 991px) {
+  .navbar-nav>li {
+    min-width: 80px;
+    text-align: center;
+  }
   button span.webtitle {
     top: 0px;
     height: 130px;
@@ -496,6 +511,10 @@ button.btn.btn-primary.web:hover {
   }
 }
 @media screen and (max-width: 780px) {
+  .navbar-nav>li {
+    min-width: 80px;
+    text-align: center;
+  }
   .spacer {
       padding-left: 10%;
   }
