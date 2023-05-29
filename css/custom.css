@@ -450,6 +450,10 @@ button.btn.btn-primary.web:hover {
 	-webkit-box-shadow: 0 0 10px #000000;
 }
 
+.detail a.btn.btn-default {
+    padding-top: 1em;
+}
+
 /*------------------- MEDIA QUERIES ----------------------*/
 /********big screen**********/
 
