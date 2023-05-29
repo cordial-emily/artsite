@@ -447,7 +447,7 @@ button.btn.btn-primary.web:hover {
 
 @media screen and (max-width: 3500px) {
     .navbar-nav>li {
-      min-width: 80px;
+      width: 100px;
       text-align: center;
     }
     button span.webtitle {
